@@ -30,4 +30,4 @@ Le script vérifie l’image, relit fichiers et registre, puis croise les relev�
 
 Le déroulement se lit dans [script/analyser.py](script/analyser.py). Chaque étape appelle un fichier dédié.
 
-[Corrélations](resultats/correlations.json) · [Persistance](resultats/persistance.json) · [Chronologie](resultats/evenements.csv) · [Provenance](resultats/provenance.json) · [Référence détaillée](../V1/us8/rendu.md).
+[Corrélations](resultats/correlations.json) · [Persistance](resultats/persistance.json) · [Chronologie](resultats/evenements.csv) · [Provenance](resultats/provenance.json).

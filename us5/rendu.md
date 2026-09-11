@@ -22,4 +22,4 @@ J’ai évalué les impacts à partir des analyses statique et dynamique. Le ris
 
 **US5 validée : impacts décrits, niveaux justifiés et mesures proposées.** Les niveaux sont qualitatifs ; les mesures ne sont pas présentées comme toutes déployées ou testées.
 
-[Analyse statique](../us3/rendu.md) · [Analyse dynamique](../us4/rendu.md) · [Justifications détaillées](../V1/us5/rendu.md).
+[Analyse statique](../us3/rendu.md) · [Analyse dynamique](../us4/rendu.md).

@@ -30,4 +30,4 @@ bash us4/analyse.sh
 
 Les résultats automatiques sont remplacés. La configuration est dans [compose.yaml](compose.yaml), le traitement dans [analyse.py](analyse.py).
 
-[Premier essai](resultats/resume.json) · [Second essai](resultats/second-resume.json) · [Erreur Qt](resultats/observation-env.json) · [Restauration](resultats/restauration.json) · [Référence détaillée](../V1/us4/rendu.md).
+[Premier essai](resultats/resume.json) · [Second essai](resultats/second-resume.json) · [Erreur Qt](resultats/observation-env.json) · [Restauration](resultats/restauration.json).

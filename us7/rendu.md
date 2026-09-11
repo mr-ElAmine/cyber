@@ -32,4 +32,4 @@ L’analyse fonctionne hors réseau, lit la copie sans la modifier et remplace l
 
 Le dossier `script/` sépare les étapes : [copier le disque](script/acquerir_disque.sh), [vérifier la copie](script/verifier_image.py), puis [inventorier les fichiers](script/analyser_disque.py).
 
-[Comparaison et SHA-256](resultats/integrite.json) · [Inventaire](resultats/fichiers.csv) · [Configuration Docker](compose.yaml) · [Référence détaillée](../V1/us7/rendu.md).
+[Comparaison et SHA-256](resultats/integrite.json) · [Inventaire](resultats/fichiers.csv) · [Configuration Docker](compose.yaml).

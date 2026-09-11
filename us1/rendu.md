@@ -40,4 +40,4 @@ route print
 ping 1.1.1.1
 ```
 
-[Configuration Docker](../infrastructure/windows/compose.yaml) · [Preuves Docker](preuves.txt) · [Référence détaillée](../V1/us1/rendu.md).
+[Configuration Docker](../infrastructure/windows/compose.yaml) · [Preuves Docker](preuves.txt).

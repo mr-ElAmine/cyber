@@ -44,4 +44,4 @@ Dans `script/`, les étapes se lisent dans cet ordre :
 
 [references.py](script/references.py) contient les chemins et les identifiants ; [verifier_elf.py](script/verifier_elf.py) contrôle le format mémoire ; [volatility.py](script/volatility.py) lance les commandes et enregistre les résultats.
 
-[Configuration Docker](compose.yaml) · [Acquisition](resultats/acquisition.json) · [Intégrité](resultats/integrite.json) · [Processus avant](resultats/avant-pslist.json) · [Processus après](resultats/apres-pslist.json) · [Réseau](resultats/apres-netstat.json) · [Référence détaillée](../V1/us6/rendu.md).
+[Configuration Docker](compose.yaml) · [Acquisition](resultats/acquisition.json) · [Intégrité](resultats/integrite.json) · [Processus avant](resultats/avant-pslist.json) · [Processus après](resultats/apres-pslist.json) · [Réseau](resultats/apres-netstat.json).

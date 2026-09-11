@@ -1,9 +1,0 @@
-{
-    "image-end-offset": 12581994496,
-    "total-clusters": 1048576,
-    "check-errors": 0,
-    "allocated-clusters": 139664,
-    "filename": "/storage/windows.qcow2",
-    "format": "qcow2",
-    "fragmented-clusters": 12577
-}

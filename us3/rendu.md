@@ -33,4 +33,4 @@ bash us3/analyse.sh
 
 Le script prépare l’image, crée le dossier de sortie, puis lance l’analyse. Il remplace les résultats automatiques. Les réglages sont dans [compose.yaml](compose.yaml), le traitement dans [analyse.py](analyse.py).
 
-[Résultats](resultats/analyse.json) · [Indicateurs](iocs.csv) · [Instructions de Res.exe](resultats/Res.exe.asm.txt) · [Instructions d’Env.exe](resultats/Env.exe.asm.txt) · [Référence détaillée](../V1/us3/rendu.md).
+[Résultats](resultats/analyse.json) · [Indicateurs](iocs.csv) · [Instructions de Res.exe](resultats/Res.exe.asm.txt) · [Instructions d’Env.exe](resultats/Env.exe.asm.txt).
