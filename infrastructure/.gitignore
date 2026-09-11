@@ -1,0 +1,11 @@
+# Les images système et résultats restent locaux.
+**/media/*
+!**/media/.gitkeep
+**/results/
+*.qcow2
+*.iso
+*.dmp
+*.raw
+__pycache__/
+*.pyc
+.env

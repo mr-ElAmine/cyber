@@ -1,0 +1,1772 @@
+{
+  "date_utc": "2026-09-10T15:24:40.987727+00:00",
+  "pefile_version": "2024.8.26",
+  "objdump_version": "GNU objdump (GNU Binutils) 2.44",
+  "fichiers": [
+    {
+      "fichier": "Res.exe",
+      "octets": 25088,
+      "sha256": "49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e",
+      "machine": "0x14c",
+      "format": "PE32",
+      "base_image": "0x400000",
+      "point_entree_va": "0x4014e0",
+      "horodatage_entete_utc_non_fiable": "2017-12-22T12:02:53+00:00",
+      "taille_table_certificats": 0,
+      "debut_overlay": null,
+      "sections": [
+        {
+          "nom": ".text",
+          "va": "0x401000",
+          "taille_virtuelle": 10088,
+          "taille_fichier": 10240,
+          "entropie": 5.982,
+          "permissions": "RX"
+        },
+        {
+          "nom": ".data",
+          "va": "0x404000",
+          "taille_virtuelle": 176,
+          "taille_fichier": 512,
+          "entropie": 0.951,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".rdata",
+          "va": "0x405000",
+          "taille_virtuelle": 4140,
+          "taille_fichier": 4608,
+          "entropie": 5.233,
+          "permissions": "R"
+        },
+        {
+          "nom": ".eh_fram",
+          "va": "0x407000",
+          "taille_virtuelle": 3500,
+          "taille_fichier": 3584,
+          "entropie": 4.564,
+          "permissions": "R"
+        },
+        {
+          "nom": ".bss",
+          "va": "0x408000",
+          "taille_virtuelle": 1156,
+          "taille_fichier": 0,
+          "entropie": 0.0,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".idata",
+          "va": "0x409000",
+          "taille_virtuelle": 4052,
+          "taille_fichier": 4096,
+          "entropie": 5.283,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".CRT",
+          "va": "0x40a000",
+          "taille_virtuelle": 52,
+          "taille_fichier": 512,
+          "entropie": 0.255,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".tls",
+          "va": "0x40b000",
+          "taille_virtuelle": 32,
+          "taille_fichier": 512,
+          "entropie": 0.204,
+          "permissions": "RW"
+        }
+      ],
+      "imports": [
+        {
+          "dll": "Qt5Core.dll",
+          "fonctions": [
+            {
+              "nom": "_ZN10QArrayData10deallocateEPS_jj",
+              "iat_va": "0x40924c"
+            },
+            {
+              "nom": "_ZN16QCoreApplication4execEv",
+              "iat_va": "0x409250"
+            },
+            {
+              "nom": "_ZN16QCoreApplicationC1ERiPPci",
+              "iat_va": "0x409254"
+            },
+            {
+              "nom": "_ZN16QCoreApplicationD1Ev",
+              "iat_va": "0x409258"
+            },
+            {
+              "nom": "_ZN7QString16fromAscii_helperEPKci",
+              "iat_va": "0x40925c"
+            },
+            {
+              "nom": "_ZN8QVariantC1EPKc",
+              "iat_va": "0x409260"
+            },
+            {
+              "nom": "_ZN8QVariantD1Ev",
+              "iat_va": "0x409264"
+            },
+            {
+              "nom": "_ZN9QSettings8setValueERK7QStringRK8QVariant",
+              "iat_va": "0x409268"
+            },
+            {
+              "nom": "_ZN9QSettingsC1ERK7QStringNS_6FormatEP7QObject",
+              "iat_va": "0x40926c"
+            },
+            {
+              "nom": "_ZN9QSettingsD1Ev",
+              "iat_va": "0x409270"
+            }
+          ]
+        },
+        {
+          "dll": "libgcc_s_dw2-1.dll",
+          "fonctions": [
+            {
+              "nom": "_Unwind_Resume",
+              "iat_va": "0x409278"
+            },
+            {
+              "nom": "__deregister_frame_info",
+              "iat_va": "0x40927c"
+            },
+            {
+              "nom": "__register_frame_info",
+              "iat_va": "0x409280"
+            }
+          ]
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "fonctions": [
+            {
+              "nom": "DeleteCriticalSection",
+              "iat_va": "0x409288"
+            },
+            {
+              "nom": "EnterCriticalSection",
+              "iat_va": "0x40928c"
+            },
+            {
+              "nom": "FreeLibrary",
+              "iat_va": "0x409290"
+            },
+            {
+              "nom": "GetConsoleWindow",
+              "iat_va": "0x409294"
+            },
+            {
+              "nom": "GetCurrentProcess",
+              "iat_va": "0x409298"
+            },
+            {
+              "nom": "GetCurrentProcessId",
+              "iat_va": "0x40929c"
+            },
+            {
+              "nom": "GetCurrentThreadId",
+              "iat_va": "0x4092a0"
+            },
+            {
+              "nom": "GetLastError",
+              "iat_va": "0x4092a4"
+            },
+            {
+              "nom": "GetModuleHandleA",
+              "iat_va": "0x4092a8"
+            },
+            {
+              "nom": "GetProcAddress",
+              "iat_va": "0x4092ac"
+            },
+            {
+              "nom": "GetStartupInfoA",
+              "iat_va": "0x4092b0"
+            },
+            {
+              "nom": "GetSystemTimeAsFileTime",
+              "iat_va": "0x4092b4"
+            },
+            {
+              "nom": "GetTickCount",
+              "iat_va": "0x4092b8"
+            },
+            {
+              "nom": "InitializeCriticalSection",
+              "iat_va": "0x4092bc"
+            },
+            {
+              "nom": "LeaveCriticalSection",
+              "iat_va": "0x4092c0"
+            },
+            {
+              "nom": "LoadLibraryA",
+              "iat_va": "0x4092c4"
+            },
+            {
+              "nom": "QueryPerformanceCounter",
+              "iat_va": "0x4092c8"
+            },
+            {
+              "nom": "SetUnhandledExceptionFilter",
+              "iat_va": "0x4092cc"
+            },
+            {
+              "nom": "Sleep",
+              "iat_va": "0x4092d0"
+            },
+            {
+              "nom": "TerminateProcess",
+              "iat_va": "0x4092d4"
+            },
+            {
+              "nom": "TlsGetValue",
+              "iat_va": "0x4092d8"
+            },
+            {
+              "nom": "UnhandledExceptionFilter",
+              "iat_va": "0x4092dc"
+            },
+            {
+              "nom": "VirtualProtect",
+              "iat_va": "0x4092e0"
+            },
+            {
+              "nom": "VirtualQuery",
+              "iat_va": "0x4092e4"
+            }
+          ]
+        },
+        {
+          "dll": "msvcrt.dll",
+          "fonctions": [
+            {
+              "nom": "__dllonexit",
+              "iat_va": "0x4092ec"
+            },
+            {
+              "nom": "__getmainargs",
+              "iat_va": "0x4092f0"
+            },
+            {
+              "nom": "__initenv",
+              "iat_va": "0x4092f4"
+            },
+            {
+              "nom": "__lconv_init",
+              "iat_va": "0x4092f8"
+            },
+            {
+              "nom": "__set_app_type",
+              "iat_va": "0x4092fc"
+            },
+            {
+              "nom": "__setusermatherr",
+              "iat_va": "0x409300"
+            },
+            {
+              "nom": "_acmdln",
+              "iat_va": "0x409304"
+            },
+            {
+              "nom": "_amsg_exit",
+              "iat_va": "0x409308"
+            },
+            {
+              "nom": "_cexit",
+              "iat_va": "0x40930c"
+            },
+            {
+              "nom": "_fmode",
+              "iat_va": "0x409310"
+            },
+            {
+              "nom": "_initterm",
+              "iat_va": "0x409314"
+            },
+            {
+              "nom": "_iob",
+              "iat_va": "0x409318"
+            },
+            {
+              "nom": "_lock",
+              "iat_va": "0x40931c"
+            },
+            {
+              "nom": "_onexit",
+              "iat_va": "0x409320"
+            },
+            {
+              "nom": "_unlock",
+              "iat_va": "0x409324"
+            },
+            {
+              "nom": "abort",
+              "iat_va": "0x409328"
+            },
+            {
+              "nom": "calloc",
+              "iat_va": "0x40932c"
+            },
+            {
+              "nom": "exit",
+              "iat_va": "0x409330"
+            },
+            {
+              "nom": "fprintf",
+              "iat_va": "0x409334"
+            },
+            {
+              "nom": "free",
+              "iat_va": "0x409338"
+            },
+            {
+              "nom": "fwrite",
+              "iat_va": "0x40933c"
+            },
+            {
+              "nom": "malloc",
+              "iat_va": "0x409340"
+            },
+            {
+              "nom": "memcpy",
+              "iat_va": "0x409344"
+            },
+            {
+              "nom": "signal",
+              "iat_va": "0x409348"
+            },
+            {
+              "nom": "strlen",
+              "iat_va": "0x40934c"
+            },
+            {
+              "nom": "strncmp",
+              "iat_va": "0x409350"
+            },
+            {
+              "nom": "system",
+              "iat_va": "0x409354"
+            },
+            {
+              "nom": "vfprintf",
+              "iat_va": "0x409358"
+            }
+          ]
+        },
+        {
+          "dll": "libwinpthread-1.dll",
+          "fonctions": [
+            {
+              "nom": "pthread_equal",
+              "iat_va": "0x409360"
+            }
+          ]
+        },
+        {
+          "dll": "USER32.dll",
+          "fonctions": [
+            {
+              "nom": "GetAsyncKeyState",
+              "iat_va": "0x409368"
+            },
+            {
+              "nom": "GetKeyState",
+              "iat_va": "0x40936c"
+            },
+            {
+              "nom": "ShowWindow",
+              "iat_va": "0x409370"
+            }
+          ]
+        },
+        {
+          "dll": "libstdc++-6.dll",
+          "fonctions": [
+            {
+              "nom": "_ZNKSt12__basic_fileIcE7is_openEv",
+              "iat_va": "0x409378"
+            },
+            {
+              "nom": "_ZNKSt9type_infoeqERKS_",
+              "iat_va": "0x40937c"
+            },
+            {
+              "nom": "_ZNSt12__basic_fileIcED1Ev",
+              "iat_va": "0x409380"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode",
+              "iat_va": "0x409384"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv",
+              "iat_va": "0x409388"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEEC1Ev",
+              "iat_va": "0x40938c"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEED1Ev",
+              "iat_va": "0x409390"
+            },
+            {
+              "nom": "_ZNSt13basic_fstreamIcSt11char_traitsIcEED1Ev",
+              "iat_va": "0x409394"
+            },
+            {
+              "nom": "_ZNSt6localeD1Ev",
+              "iat_va": "0x409398"
+            },
+            {
+              "nom": "_ZNSt6thread15_M_start_threadESt10shared_ptrINS_10_Impl_baseEE",
+              "iat_va": "0x40939c"
+            },
+            {
+              "nom": "_ZNSt8ios_base4InitC1Ev",
+              "iat_va": "0x4093a0"
+            },
+            {
+              "nom": "_ZNSt8ios_base4InitD1Ev",
+              "iat_va": "0x4093a4"
+            },
+            {
+              "nom": "_ZNSt8ios_baseC2Ev",
+              "iat_va": "0x4093a8"
+            },
+            {
+              "nom": "_ZNSt8ios_baseD2Ev",
+              "iat_va": "0x4093ac"
+            },
+            {
+              "nom": "_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E",
+              "iat_va": "0x4093b0"
+            },
+            {
+              "nom": "_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate",
+              "iat_va": "0x4093b4"
+            },
+            {
+              "nom": "_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i",
+              "iat_va": "0x4093b8"
+            },
+            {
+              "nom": "_ZSt4cout",
+              "iat_va": "0x4093bc"
+            },
+            {
+              "nom": "_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_",
+              "iat_va": "0x4093c0"
+            },
+            {
+              "nom": "_ZSt9terminatev",
+              "iat_va": "0x4093c4"
+            },
+            {
+              "nom": "_ZTTSt13basic_fstreamIcSt11char_traitsIcEE",
+              "iat_va": "0x4093c8"
+            },
+            {
+              "nom": "_ZTVN10__cxxabiv117__class_type_infoE",
+              "iat_va": "0x4093cc"
+            },
+            {
+              "nom": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+              "iat_va": "0x4093d0"
+            },
+            {
+              "nom": "_ZTVSt13basic_filebufIcSt11char_traitsIcEE",
+              "iat_va": "0x4093d4"
+            },
+            {
+              "nom": "_ZTVSt13basic_fstreamIcSt11char_traitsIcEE",
+              "iat_va": "0x4093d8"
+            },
+            {
+              "nom": "_ZTVSt15basic_streambufIcSt11char_traitsIcEE",
+              "iat_va": "0x4093dc"
+            },
+            {
+              "nom": "_ZTVSt9basic_iosIcSt11char_traitsIcEE",
+              "iat_va": "0x4093e0"
+            },
+            {
+              "nom": "_ZdlPv",
+              "iat_va": "0x4093e4"
+            },
+            {
+              "nom": "_Znwj",
+              "iat_va": "0x4093e8"
+            },
+            {
+              "nom": "__cxa_pure_virtual",
+              "iat_va": "0x4093ec"
+            },
+            {
+              "nom": "__gxx_personality_v0",
+              "iat_va": "0x4093f0"
+            }
+          ]
+        }
+      ],
+      "chaines_selectionnees": [
+        {
+          "offset": "0x2e64",
+          "va": "0x405064",
+          "encodage": "ascii",
+          "texte": "c:\\WindSyst\\log.txt"
+        },
+        {
+          "offset": "0x2e78",
+          "va": "0x405078",
+          "encodage": "ascii",
+          "texte": "mkdir c:\\WindSyst"
+        },
+        {
+          "offset": "0x2e8c",
+          "va": "0x40508c",
+          "encodage": "ascii",
+          "texte": "XCOPY libgcc_s_dw2-1.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2eb4",
+          "va": "0x4050b4",
+          "encodage": "ascii",
+          "texte": "XCOPY libstdc++-6.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2edc",
+          "va": "0x4050dc",
+          "encodage": "ascii",
+          "texte": "XCOPY libwinpthread-1.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2f08",
+          "va": "0x405108",
+          "encodage": "ascii",
+          "texte": "XCOPY Qt5Cored.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2f2a",
+          "va": "0x40512a",
+          "encodage": "ascii",
+          "texte": "XCOPY Res.exe c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2f47",
+          "va": "0x405147",
+          "encodage": "ascii",
+          "texte": "XCOPY Env.exe c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2f64",
+          "va": "0x405164",
+          "encodage": "ascii",
+          "texte": "XCOPY Qt5Widgets.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2f88",
+          "va": "0x405188",
+          "encodage": "ascii",
+          "texte": "XCOPY Qt5Network.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2fac",
+          "va": "0x4051ac",
+          "encodage": "ascii",
+          "texte": "XCOPY Qt5Gui.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2fcc",
+          "va": "0x4051cc",
+          "encodage": "ascii",
+          "texte": "XCOPY Qt5Core.dll c:\\WindSyst /S"
+        },
+        {
+          "offset": "0x2fed",
+          "va": "0x4051ed",
+          "encodage": "ascii",
+          "texte": "mkdir c:\\WindSyst\\platforms"
+        },
+        {
+          "offset": "0x300c",
+          "va": "0x40520c",
+          "encodage": "ascii",
+          "texte": "XCOPY qminimal.dll c:\\WindSyst\\platforms /S"
+        },
+        {
+          "offset": "0x3038",
+          "va": "0x405238",
+          "encodage": "ascii",
+          "texte": "XCOPY qoffscreen.dll c:\\WindSyst\\platforms /S"
+        },
+        {
+          "offset": "0x3068",
+          "va": "0x405268",
+          "encodage": "ascii",
+          "texte": "XCOPY qwindows.dll c:\\WindSyst\\platforms /S"
+        },
+        {
+          "offset": "0x3094",
+          "va": "0x405294",
+          "encodage": "ascii",
+          "texte": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+        },
+        {
+          "offset": "0x30d4",
+          "va": "0x4052d4",
+          "encodage": "ascii",
+          "texte": "C:\\WindSyst\\Res.exe"
+        },
+        {
+          "offset": "0x30e8",
+          "va": "0x4052e8",
+          "encodage": "ascii",
+          "texte": "Res"
+        },
+        {
+          "offset": "0x30ec",
+          "va": "0x4052ec",
+          "encodage": "ascii",
+          "texte": "C:\\WindSyst\\Env.exe"
+        },
+        {
+          "offset": "0x3100",
+          "va": "0x405300",
+          "encodage": "ascii",
+          "texte": "Env"
+        }
+      ]
+    },
+    {
+      "fichier": "Env.exe",
+      "octets": 53248,
+      "sha256": "e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2",
+      "machine": "0x14c",
+      "format": "PE32",
+      "base_image": "0x400000",
+      "point_entree_va": "0x4014c0",
+      "horodatage_entete_utc_non_fiable": "2017-12-22T00:40:43+00:00",
+      "taille_table_certificats": 0,
+      "debut_overlay": null,
+      "sections": [
+        {
+          "nom": ".text",
+          "va": "0x401000",
+          "taille_virtuelle": 28120,
+          "taille_fichier": 28160,
+          "entropie": 5.941,
+          "permissions": "RX"
+        },
+        {
+          "nom": ".data",
+          "va": "0x408000",
+          "taille_virtuelle": 112,
+          "taille_fichier": 512,
+          "entropie": 0.838,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".rdata",
+          "va": "0x409000",
+          "taille_virtuelle": 6132,
+          "taille_fichier": 6144,
+          "entropie": 5.082,
+          "permissions": "R"
+        },
+        {
+          "nom": ".eh_fram",
+          "va": "0x40b000",
+          "taille_virtuelle": 4268,
+          "taille_fichier": 4608,
+          "entropie": 4.522,
+          "permissions": "R"
+        },
+        {
+          "nom": ".bss",
+          "va": "0x40d000",
+          "taille_virtuelle": 1092,
+          "taille_fichier": 0,
+          "entropie": 0.0,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".idata",
+          "va": "0x40e000",
+          "taille_virtuelle": 11296,
+          "taille_fichier": 11776,
+          "entropie": 5.506,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".CRT",
+          "va": "0x411000",
+          "taille_virtuelle": 52,
+          "taille_fichier": 512,
+          "entropie": 0.255,
+          "permissions": "RW"
+        },
+        {
+          "nom": ".tls",
+          "va": "0x412000",
+          "taille_virtuelle": 32,
+          "taille_fichier": 512,
+          "entropie": 0.205,
+          "permissions": "RW"
+        }
+      ],
+      "imports": [
+        {
+          "dll": "Qt5Core.dll",
+          "fonctions": [
+            {
+              "nom": "_ZN10QArrayData10deallocateEPS_jj",
+              "iat_va": "0x40e474"
+            },
+            {
+              "nom": "_ZN10QArrayData11shared_nullE",
+              "iat_va": "0x40e478"
+            },
+            {
+              "nom": "_ZN10QByteArray6appendERKS_",
+              "iat_va": "0x40e47c"
+            },
+            {
+              "nom": "_ZN11QMetaObject10ConnectionD1Ev",
+              "iat_va": "0x40e480"
+            },
+            {
+              "nom": "_ZN11QMetaObject14normalizedTypeEPKc",
+              "iat_va": "0x40e484"
+            },
+            {
+              "nom": "_ZN11QMetaObject18connectSlotsByNameEP7QObject",
+              "iat_va": "0x40e488"
+            },
+            {
+              "nom": "_ZN11QMetaObject8activateEP7QObjectPKS_iPPv",
+              "iat_va": "0x40e48c"
+            },
+            {
+              "nom": "_ZN11QTextStream5flushEv",
+              "iat_va": "0x40e490"
+            },
+            {
+              "nom": "_ZN11QTextStreamC1EP9QIODevice",
+              "iat_va": "0x40e494"
+            },
+            {
+              "nom": "_ZN11QTextStreamlsEPKc",
+              "iat_va": "0x40e498"
+            },
+            {
+              "nom": "_ZN11QTextStreamlsERK10QByteArray",
+              "iat_va": "0x40e49c"
+            },
+            {
+              "nom": "_ZN11QTextStreamlsERK7QString",
+              "iat_va": "0x40e4a0"
+            },
+            {
+              "nom": "_ZN11QTextStreamlsEc",
+              "iat_va": "0x40e4a4"
+            },
+            {
+              "nom": "_ZN16QCoreApplication9translateEPKcS1_S1_i",
+              "iat_va": "0x40e4a8"
+            },
+            {
+              "nom": "_ZN6QDebug9putStringEPK5QCharj",
+              "iat_va": "0x40e4ac"
+            },
+            {
+              "nom": "_ZN6QDebugD1Ev",
+              "iat_va": "0x40e4b0"
+            },
+            {
+              "nom": "_ZN7QObject10childEventEP11QChildEvent",
+              "iat_va": "0x40e4b4"
+            },
+            {
+              "nom": "_ZN7QObject10timerEventEP11QTimerEvent",
+              "iat_va": "0x40e4b8"
+            },
+            {
+              "nom": "_ZN7QObject11customEventEP6QEvent",
+              "iat_va": "0x40e4bc"
+            },
+            {
+              "nom": "_ZN7QObject11deleteLaterEv",
+              "iat_va": "0x40e4c0"
+            },
+            {
+              "nom": "_ZN7QObject11eventFilterEPS_P6QEvent",
+              "iat_va": "0x40e4c4"
+            },
+            {
+              "nom": "_ZN7QObject11qt_metacallEN11QMetaObject4CallEiPPv",
+              "iat_va": "0x40e4c8"
+            },
+            {
+              "nom": "_ZN7QObject11qt_metacastEPKc",
+              "iat_va": "0x40e4cc"
+            },
+            {
+              "nom": "_ZN7QObject13connectNotifyERK11QMetaMethod",
+              "iat_va": "0x40e4d0"
+            },
+            {
+              "nom": "_ZN7QObject13setObjectNameERK7QString",
+              "iat_va": "0x40e4d4"
+            },
+            {
+              "nom": "_ZN7QObject16disconnectNotifyERK11QMetaMethod",
+              "iat_va": "0x40e4d8"
+            },
+            {
+              "nom": "_ZN7QObject16staticMetaObjectE",
+              "iat_va": "0x40e4dc"
+            },
+            {
+              "nom": "_ZN7QObject5eventEP6QEvent",
+              "iat_va": "0x40e4e0"
+            },
+            {
+              "nom": "_ZN7QObject7connectEPKS_PKcS1_S3_N2Qt14ConnectionTypeE",
+              "iat_va": "0x40e4e4"
+            },
+            {
+              "nom": "_ZN7QObjectC2EPS_",
+              "iat_va": "0x40e4e8"
+            },
+            {
+              "nom": "_ZN7QObjectD2Ev",
+              "iat_va": "0x40e4ec"
+            },
+            {
+              "nom": "_ZN7QString13toUtf8_helperERKS_",
+              "iat_va": "0x40e4f0"
+            },
+            {
+              "nom": "_ZN7QString14compare_helperEPK5QChariPKciN2Qt15CaseSensitivityE",
+              "iat_va": "0x40e4f4"
+            },
+            {
+              "nom": "_ZN7QString15fromUtf8_helperEPKci",
+              "iat_va": "0x40e4f8"
+            },
+            {
+              "nom": "_ZN7QString16fromAscii_helperEPKci",
+              "iat_va": "0x40e4fc"
+            },
+            {
+              "nom": "_ZN7QString17fromLatin1_helperEPKci",
+              "iat_va": "0x40e500"
+            },
+            {
+              "nom": "_ZN7QString6appendERKS_",
+              "iat_va": "0x40e504"
+            },
+            {
+              "nom": "_ZN7QString7replaceERKS_S1_N2Qt15CaseSensitivityE",
+              "iat_va": "0x40e508"
+            },
+            {
+              "nom": "_ZN7QString8truncateEi",
+              "iat_va": "0x40e50c"
+            },
+            {
+              "nom": "_ZN7QStringaSERKS_",
+              "iat_va": "0x40e510"
+            },
+            {
+              "nom": "_ZN9QIODevice8readLineEx",
+              "iat_va": "0x40e514"
+            },
+            {
+              "nom": "_ZN9QMetaType22registerNormalizedTypeERK10QByteArrayPFvPvEPFS3_S3_PKvEi6QFlagsINS_8TypeFlagEEPK11QMetaObject",
+              "iat_va": "0x40e518"
+            },
+            {
+              "nom": "_ZNK10QByteArray6isNullEv",
+              "iat_va": "0x40e51c"
+            },
+            {
+              "nom": "_ZNK10QByteArray8toBase64Ev",
+              "iat_va": "0x40e520"
+            },
+            {
+              "nom": "_ZNK11QMetaObject2trEPKcS1_i",
+              "iat_va": "0x40e524"
+            },
+            {
+              "nom": "_ZNK11QObjectData17dynamicMetaObjectEv",
+              "iat_va": "0x40e528"
+            },
+            {
+              "nom": "_ZNK14QMessageLogger5debugEv",
+              "iat_va": "0x40e52c"
+            },
+            {
+              "nom": "_ZNK7QObject10objectNameEv",
+              "iat_va": "0x40e530"
+            },
+            {
+              "nom": "_ZNK9QIODevice11errorStringEv",
+              "iat_va": "0x40e534"
+            }
+          ]
+        },
+        {
+          "dll": "Qt5Network.dll",
+          "fonctions": [
+            {
+              "nom": "_ZN10QSslSocket16waitForEncryptedEi",
+              "iat_va": "0x40e53c"
+            },
+            {
+              "nom": "_ZN10QSslSocket21startClientEncryptionEv",
+              "iat_va": "0x40e540"
+            },
+            {
+              "nom": "_ZN10QSslSocket22connectToHostEncryptedERK7QStringt6QFlagsIN9QIODevice12OpenModeFlagEEN15QAbstractSocket20NetworkLayerProtocolE",
+              "iat_va": "0x40e544"
+            },
+            {
+              "nom": "_ZN10QSslSocketC1EP7QObject",
+              "iat_va": "0x40e548"
+            },
+            {
+              "nom": "_ZN15QAbstractSocket16staticMetaObjectE",
+              "iat_va": "0x40e54c"
+            },
+            {
+              "nom": "_Zls6QDebugN15QAbstractSocket11SocketErrorE",
+              "iat_va": "0x40e550"
+            },
+            {
+              "nom": "_Zls6QDebugN15QAbstractSocket11SocketStateE",
+              "iat_va": "0x40e554"
+            }
+          ]
+        },
+        {
+          "dll": "Qt5Widgets.dll",
+          "fonctions": [
+            {
+              "nom": "_ZN10QBoxLayout10setSpacingEi",
+              "iat_va": "0x40e55c"
+            },
+            {
+              "nom": "_ZN10QBoxLayout9addLayoutEP7QLayouti",
+              "iat_va": "0x40e560"
+            },
+            {
+              "nom": "_ZN10QBoxLayout9addWidgetEP7QWidgeti6QFlagsIN2Qt13AlignmentFlagEE",
+              "iat_va": "0x40e564"
+            },
+            {
+              "nom": "_ZN10QStatusBarC1EP7QWidget",
+              "iat_va": "0x40e568"
+            },
+            {
+              "nom": "_ZN11QFormLayout10setSpacingEi",
+              "iat_va": "0x40e56c"
+            },
+            {
+              "nom": "_ZN11QFormLayout16setRowWrapPolicyENS_13RowWrapPolicyE",
+              "iat_va": "0x40e570"
+            },
+            {
+              "nom": "_ZN11QFormLayout18setVerticalSpacingEi",
+              "iat_va": "0x40e574"
+            },
+            {
+              "nom": "_ZN11QFormLayout20setFieldGrowthPolicyENS_17FieldGrowthPolicyE",
+              "iat_va": "0x40e578"
+            },
+            {
+              "nom": "_ZN11QFormLayout9setWidgetEiNS_8ItemRoleEP7QWidget",
+              "iat_va": "0x40e57c"
+            },
+            {
+              "nom": "_ZN11QFormLayoutC1EP7QWidget",
+              "iat_va": "0x40e580"
+            },
+            {
+              "nom": "_ZN11QHBoxLayoutC1Ev",
+              "iat_va": "0x40e584"
+            },
+            {
+              "nom": "_ZN11QMainWindow10addToolBarEN2Qt11ToolBarAreaEP8QToolBar",
+              "iat_va": "0x40e588"
+            },
+            {
+              "nom": "_ZN11QMainWindow10setMenuBarEP8QMenuBar",
+              "iat_va": "0x40e58c"
+            },
+            {
+              "nom": "_ZN11QMainWindow11qt_metacallEN11QMetaObject4CallEiPPv",
+              "iat_va": "0x40e590"
+            },
+            {
+              "nom": "_ZN11QMainWindow11qt_metacastEPKc",
+              "iat_va": "0x40e594"
+            },
+            {
+              "nom": "_ZN11QMainWindow12setStatusBarEP10QStatusBar",
+              "iat_va": "0x40e598"
+            },
+            {
+              "nom": "_ZN11QMainWindow15createPopupMenuEv",
+              "iat_va": "0x40e59c"
+            },
+            {
+              "nom": "_ZN11QMainWindow16contextMenuEventEP17QContextMenuEvent",
+              "iat_va": "0x40e5a0"
+            },
+            {
+              "nom": "_ZN11QMainWindow16setCentralWidgetEP7QWidget",
+              "iat_va": "0x40e5a4"
+            },
+            {
+              "nom": "_ZN11QMainWindow16staticMetaObjectE",
+              "iat_va": "0x40e5a8"
+            },
+            {
+              "nom": "_ZN11QMainWindow5eventEP6QEvent",
+              "iat_va": "0x40e5ac"
+            },
+            {
+              "nom": "_ZN11QMainWindowC2EP7QWidget6QFlagsIN2Qt10WindowTypeEE",
+              "iat_va": "0x40e5b0"
+            },
+            {
+              "nom": "_ZN11QMainWindowD2Ev",
+              "iat_va": "0x40e5b4"
+            },
+            {
+              "nom": "_ZN11QMessageBox7warningEP7QWidgetRK7QStringS4_6QFlagsINS_14StandardButtonEES6_",
+              "iat_va": "0x40e5b8"
+            },
+            {
+              "nom": "_ZN11QPushButtonC1EP7QWidget",
+              "iat_va": "0x40e5bc"
+            },
+            {
+              "nom": "_ZN11QVBoxLayoutC1EP7QWidget",
+              "iat_va": "0x40e5c0"
+            },
+            {
+              "nom": "_ZN12QApplication4execEv",
+              "iat_va": "0x40e5c4"
+            },
+            {
+              "nom": "_ZN12QApplicationC1ERiPPci",
+              "iat_va": "0x40e5c8"
+            },
+            {
+              "nom": "_ZN12QApplicationD1Ev",
+              "iat_va": "0x40e5cc"
+            },
+            {
+              "nom": "_ZN14QPlainTextEditC1EP7QWidget",
+              "iat_va": "0x40e5d0"
+            },
+            {
+              "nom": "_ZN15QAbstractButton7setTextERK7QString",
+              "iat_va": "0x40e5d4"
+            },
+            {
+              "nom": "_ZN6QLabel7setTextERK7QString",
+              "iat_va": "0x40e5d8"
+            },
+            {
+              "nom": "_ZN6QLabelC1EP7QWidget6QFlagsIN2Qt10WindowTypeEE",
+              "iat_va": "0x40e5dc"
+            },
+            {
+              "nom": "_ZN7QLayout18setContentsMarginsEiiii",
+              "iat_va": "0x40e5e0"
+            },
+            {
+              "nom": "_ZN7QWidget10closeEventEP11QCloseEvent",
+              "iat_va": "0x40e5e4"
+            },
+            {
+              "nom": "_ZN7QWidget10enterEventEP6QEvent",
+              "iat_va": "0x40e5e8"
+            },
+            {
+              "nom": "_ZN7QWidget10leaveEventEP6QEvent",
+              "iat_va": "0x40e5ec"
+            },
+            {
+              "nom": "_ZN7QWidget10paintEventEP11QPaintEvent",
+              "iat_va": "0x40e5f0"
+            },
+            {
+              "nom": "_ZN7QWidget10setVisibleEb",
+              "iat_va": "0x40e5f4"
+            },
+            {
+              "nom": "_ZN7QWidget10wheelEventEP11QWheelEvent",
+              "iat_va": "0x40e5f8"
+            },
+            {
+              "nom": "_ZN7QWidget11actionEventEP12QActionEvent",
+              "iat_va": "0x40e5fc"
+            },
+            {
+              "nom": "_ZN7QWidget11changeEventEP6QEvent",
+              "iat_va": "0x40e600"
+            },
+            {
+              "nom": "_ZN7QWidget11nativeEventERK10QByteArrayPvPl",
+              "iat_va": "0x40e604"
+            },
+            {
+              "nom": "_ZN7QWidget11resizeEventEP12QResizeEvent",
+              "iat_va": "0x40e608"
+            },
+            {
+              "nom": "_ZN7QWidget11setGeometryERK5QRect",
+              "iat_va": "0x40e60c"
+            },
+            {
+              "nom": "_ZN7QWidget11tabletEventEP12QTabletEvent",
+              "iat_va": "0x40e610"
+            },
+            {
+              "nom": "_ZN7QWidget12focusInEventEP11QFocusEvent",
+              "iat_va": "0x40e614"
+            },
+            {
+              "nom": "_ZN7QWidget13dragMoveEventEP14QDragMoveEvent",
+              "iat_va": "0x40e618"
+            },
+            {
+              "nom": "_ZN7QWidget13focusOutEventEP11QFocusEvent",
+              "iat_va": "0x40e61c"
+            },
+            {
+              "nom": "_ZN7QWidget13keyPressEventEP9QKeyEvent",
+              "iat_va": "0x40e620"
+            },
+            {
+              "nom": "_ZN7QWidget14dragEnterEventEP15QDragEnterEvent",
+              "iat_va": "0x40e624"
+            },
+            {
+              "nom": "_ZN7QWidget14dragLeaveEventEP15QDragLeaveEvent",
+              "iat_va": "0x40e628"
+            },
+            {
+              "nom": "_ZN7QWidget14mouseMoveEventEP11QMouseEvent",
+              "iat_va": "0x40e62c"
+            },
+            {
+              "nom": "_ZN7QWidget14setWindowTitleERK7QString",
+              "iat_va": "0x40e630"
+            },
+            {
+              "nom": "_ZN7QWidget15keyReleaseEventEP9QKeyEvent",
+              "iat_va": "0x40e634"
+            },
+            {
+              "nom": "_ZN7QWidget15mousePressEventEP11QMouseEvent",
+              "iat_va": "0x40e638"
+            },
+            {
+              "nom": "_ZN7QWidget16inputMethodEventEP17QInputMethodEvent",
+              "iat_va": "0x40e63c"
+            },
+            {
+              "nom": "_ZN7QWidget17mouseReleaseEventEP11QMouseEvent",
+              "iat_va": "0x40e640"
+            },
+            {
+              "nom": "_ZN7QWidget18focusNextPrevChildEb",
+              "iat_va": "0x40e644"
+            },
+            {
+              "nom": "_ZN7QWidget21mouseDoubleClickEventEP11QMouseEvent",
+              "iat_va": "0x40e648"
+            },
+            {
+              "nom": "_ZN7QWidget6resizeERK5QSize",
+              "iat_va": "0x40e64c"
+            },
+            {
+              "nom": "_ZN7QWidget9dropEventEP10QDropEvent",
+              "iat_va": "0x40e650"
+            },
+            {
+              "nom": "_ZN7QWidget9hideEventEP10QHideEvent",
+              "iat_va": "0x40e654"
+            },
+            {
+              "nom": "_ZN7QWidget9moveEventEP10QMoveEvent",
+              "iat_va": "0x40e658"
+            },
+            {
+              "nom": "_ZN7QWidget9showEventEP10QShowEvent",
+              "iat_va": "0x40e65c"
+            },
+            {
+              "nom": "_ZN7QWidgetC1EPS_6QFlagsIN2Qt10WindowTypeEE",
+              "iat_va": "0x40e660"
+            },
+            {
+              "nom": "_ZN8QMenuBarC1EP7QWidget",
+              "iat_va": "0x40e664"
+            },
+            {
+              "nom": "_ZN8QToolBarC1EP7QWidget",
+              "iat_va": "0x40e668"
+            },
+            {
+              "nom": "_ZN9QLineEdit11setEchoModeENS_8EchoModeE",
+              "iat_va": "0x40e66c"
+            },
+            {
+              "nom": "_ZN9QLineEdit12setInputMaskERK7QString",
+              "iat_va": "0x40e670"
+            },
+            {
+              "nom": "_ZN9QLineEdit7setTextERK7QString",
+              "iat_va": "0x40e674"
+            },
+            {
+              "nom": "_ZN9QLineEditC1EP7QWidget",
+              "iat_va": "0x40e678"
+            },
+            {
+              "nom": "_ZNK7QWidget10redirectedEP6QPoint",
+              "iat_va": "0x40e67c"
+            },
+            {
+              "nom": "_ZNK7QWidget11initPainterEP8QPainter",
+              "iat_va": "0x40e680"
+            },
+            {
+              "nom": "_ZNK7QWidget11paintEngineEv",
+              "iat_va": "0x40e684"
+            },
+            {
+              "nom": "_ZNK7QWidget13sharedPainterEv",
+              "iat_va": "0x40e688"
+            },
+            {
+              "nom": "_ZNK7QWidget14heightForWidthEi",
+              "iat_va": "0x40e68c"
+            },
+            {
+              "nom": "_ZNK7QWidget15minimumSizeHintEv",
+              "iat_va": "0x40e690"
+            },
+            {
+              "nom": "_ZNK7QWidget16inputMethodQueryEN2Qt16InputMethodQueryE",
+              "iat_va": "0x40e694"
+            },
+            {
+              "nom": "_ZNK7QWidget17hasHeightForWidthEv",
+              "iat_va": "0x40e698"
+            },
+            {
+              "nom": "_ZNK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE",
+              "iat_va": "0x40e69c"
+            },
+            {
+              "nom": "_ZNK7QWidget7devTypeEv",
+              "iat_va": "0x40e6a0"
+            },
+            {
+              "nom": "_ZNK7QWidget8sizeHintEv",
+              "iat_va": "0x40e6a4"
+            },
+            {
+              "nom": "_ZTV11QSpacerItem",
+              "iat_va": "0x40e6a8"
+            },
+            {
+              "nom": "_ZThn8_NK7QWidget10redirectedEP6QPoint",
+              "iat_va": "0x40e6ac"
+            },
+            {
+              "nom": "_ZThn8_NK7QWidget11initPainterEP8QPainter",
+              "iat_va": "0x40e6b0"
+            },
+            {
+              "nom": "_ZThn8_NK7QWidget11paintEngineEv",
+              "iat_va": "0x40e6b4"
+            },
+            {
+              "nom": "_ZThn8_NK7QWidget13sharedPainterEv",
+              "iat_va": "0x40e6b8"
+            },
+            {
+              "nom": "_ZThn8_NK7QWidget6metricEN12QPaintDevice17PaintDeviceMetricE",
+              "iat_va": "0x40e6bc"
+            },
+            {
+              "nom": "_ZThn8_NK7QWidget7devTypeEv",
+              "iat_va": "0x40e6c0"
+            }
+          ]
+        },
+        {
+          "dll": "libgcc_s_dw2-1.dll",
+          "fonctions": [
+            {
+              "nom": "_Unwind_Resume",
+              "iat_va": "0x40e6c8"
+            },
+            {
+              "nom": "__deregister_frame_info",
+              "iat_va": "0x40e6cc"
+            },
+            {
+              "nom": "__register_frame_info",
+              "iat_va": "0x40e6d0"
+            }
+          ]
+        },
+        {
+          "dll": "KERNEL32.dll",
+          "fonctions": [
+            {
+              "nom": "DeleteCriticalSection",
+              "iat_va": "0x40e6d8"
+            },
+            {
+              "nom": "EnterCriticalSection",
+              "iat_va": "0x40e6dc"
+            },
+            {
+              "nom": "FreeLibrary",
+              "iat_va": "0x40e6e0"
+            },
+            {
+              "nom": "GetCommandLineW",
+              "iat_va": "0x40e6e4"
+            },
+            {
+              "nom": "GetCurrentProcess",
+              "iat_va": "0x40e6e8"
+            },
+            {
+              "nom": "GetCurrentProcessId",
+              "iat_va": "0x40e6ec"
+            },
+            {
+              "nom": "GetCurrentThreadId",
+              "iat_va": "0x40e6f0"
+            },
+            {
+              "nom": "GetLastError",
+              "iat_va": "0x40e6f4"
+            },
+            {
+              "nom": "GetModuleHandleA",
+              "iat_va": "0x40e6f8"
+            },
+            {
+              "nom": "GetProcAddress",
+              "iat_va": "0x40e6fc"
+            },
+            {
+              "nom": "GetStartupInfoA",
+              "iat_va": "0x40e700"
+            },
+            {
+              "nom": "GetSystemTimeAsFileTime",
+              "iat_va": "0x40e704"
+            },
+            {
+              "nom": "GetTickCount",
+              "iat_va": "0x40e708"
+            },
+            {
+              "nom": "InitializeCriticalSection",
+              "iat_va": "0x40e70c"
+            },
+            {
+              "nom": "LeaveCriticalSection",
+              "iat_va": "0x40e710"
+            },
+            {
+              "nom": "LoadLibraryA",
+              "iat_va": "0x40e714"
+            },
+            {
+              "nom": "LocalFree",
+              "iat_va": "0x40e718"
+            },
+            {
+              "nom": "QueryPerformanceCounter",
+              "iat_va": "0x40e71c"
+            },
+            {
+              "nom": "SetUnhandledExceptionFilter",
+              "iat_va": "0x40e720"
+            },
+            {
+              "nom": "Sleep",
+              "iat_va": "0x40e724"
+            },
+            {
+              "nom": "TerminateProcess",
+              "iat_va": "0x40e728"
+            },
+            {
+              "nom": "TlsGetValue",
+              "iat_va": "0x40e72c"
+            },
+            {
+              "nom": "UnhandledExceptionFilter",
+              "iat_va": "0x40e730"
+            },
+            {
+              "nom": "VirtualProtect",
+              "iat_va": "0x40e734"
+            },
+            {
+              "nom": "VirtualQuery",
+              "iat_va": "0x40e738"
+            },
+            {
+              "nom": "WideCharToMultiByte",
+              "iat_va": "0x40e73c"
+            }
+          ]
+        },
+        {
+          "dll": "msvcrt.dll",
+          "fonctions": [
+            {
+              "nom": "__dllonexit",
+              "iat_va": "0x40e744"
+            },
+            {
+              "nom": "__getmainargs",
+              "iat_va": "0x40e748"
+            },
+            {
+              "nom": "__initenv",
+              "iat_va": "0x40e74c"
+            },
+            {
+              "nom": "__lconv_init",
+              "iat_va": "0x40e750"
+            },
+            {
+              "nom": "__set_app_type",
+              "iat_va": "0x40e754"
+            },
+            {
+              "nom": "__setusermatherr",
+              "iat_va": "0x40e758"
+            },
+            {
+              "nom": "_acmdln",
+              "iat_va": "0x40e75c"
+            },
+            {
+              "nom": "_amsg_exit",
+              "iat_va": "0x40e760"
+            },
+            {
+              "nom": "_cexit",
+              "iat_va": "0x40e764"
+            },
+            {
+              "nom": "_fmode",
+              "iat_va": "0x40e768"
+            },
+            {
+              "nom": "_initterm",
+              "iat_va": "0x40e76c"
+            },
+            {
+              "nom": "_iob",
+              "iat_va": "0x40e770"
+            },
+            {
+              "nom": "_lock",
+              "iat_va": "0x40e774"
+            },
+            {
+              "nom": "_onexit",
+              "iat_va": "0x40e778"
+            },
+            {
+              "nom": "_unlock",
+              "iat_va": "0x40e77c"
+            },
+            {
+              "nom": "abort",
+              "iat_va": "0x40e780"
+            },
+            {
+              "nom": "calloc",
+              "iat_va": "0x40e784"
+            },
+            {
+              "nom": "exit",
+              "iat_va": "0x40e788"
+            },
+            {
+              "nom": "fprintf",
+              "iat_va": "0x40e78c"
+            },
+            {
+              "nom": "free",
+              "iat_va": "0x40e790"
+            },
+            {
+              "nom": "fwrite",
+              "iat_va": "0x40e794"
+            },
+            {
+              "nom": "malloc",
+              "iat_va": "0x40e798"
+            },
+            {
+              "nom": "memcpy",
+              "iat_va": "0x40e79c"
+            },
+            {
+              "nom": "signal",
+              "iat_va": "0x40e7a0"
+            },
+            {
+              "nom": "strcmp",
+              "iat_va": "0x40e7a4"
+            },
+            {
+              "nom": "strlen",
+              "iat_va": "0x40e7a8"
+            },
+            {
+              "nom": "strncmp",
+              "iat_va": "0x40e7ac"
+            },
+            {
+              "nom": "vfprintf",
+              "iat_va": "0x40e7b0"
+            }
+          ]
+        },
+        {
+          "dll": "SHELL32.dll",
+          "fonctions": [
+            {
+              "nom": "CommandLineToArgvW",
+              "iat_va": "0x40e7b8"
+            }
+          ]
+        },
+        {
+          "dll": "libstdc++-6.dll",
+          "fonctions": [
+            {
+              "nom": "_ZNKSt5ctypeIcE13_M_widen_initEv",
+              "iat_va": "0x40e7c0"
+            },
+            {
+              "nom": "_ZNSt12__basic_fileIcED1Ev",
+              "iat_va": "0x40e7c4"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEE4openEPKcSt13_Ios_Openmode",
+              "iat_va": "0x40e7c8"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEE5closeEv",
+              "iat_va": "0x40e7cc"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEEC1Ev",
+              "iat_va": "0x40e7d0"
+            },
+            {
+              "nom": "_ZNSt13basic_filebufIcSt11char_traitsIcEED1Ev",
+              "iat_va": "0x40e7d4"
+            },
+            {
+              "nom": "_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev",
+              "iat_va": "0x40e7d8"
+            },
+            {
+              "nom": "_ZNSt6localeD1Ev",
+              "iat_va": "0x40e7dc"
+            },
+            {
+              "nom": "_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcj",
+              "iat_va": "0x40e7e0"
+            },
+            {
+              "nom": "_ZNSt8ios_baseC2Ev",
+              "iat_va": "0x40e7e4"
+            },
+            {
+              "nom": "_ZNSt8ios_baseD2Ev",
+              "iat_va": "0x40e7e8"
+            },
+            {
+              "nom": "_ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E",
+              "iat_va": "0x40e7ec"
+            },
+            {
+              "nom": "_ZNSt9basic_iosIcSt11char_traitsIcEE5clearESt12_Ios_Iostate",
+              "iat_va": "0x40e7f0"
+            },
+            {
+              "nom": "_ZSt16__throw_bad_castv",
+              "iat_va": "0x40e7f4"
+            },
+            {
+              "nom": "_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_",
+              "iat_va": "0x40e7f8"
+            },
+            {
+              "nom": "_ZTTSt14basic_ifstreamIcSt11char_traitsIcEE",
+              "iat_va": "0x40e7fc"
+            },
+            {
+              "nom": "_ZTVN10__cxxabiv117__class_type_infoE",
+              "iat_va": "0x40e800"
+            },
+            {
+              "nom": "_ZTVN10__cxxabiv120__si_class_type_infoE",
+              "iat_va": "0x40e804"
+            },
+            {
+              "nom": "_ZTVN10__cxxabiv121__vmi_class_type_infoE",
+              "iat_va": "0x40e808"
+            },
+            {
+              "nom": "_ZTVSt13basic_filebufIcSt11char_traitsIcEE",
+              "iat_va": "0x40e80c"
+            },
+            {
+              "nom": "_ZTVSt14basic_ifstreamIcSt11char_traitsIcEE",
+              "iat_va": "0x40e810"
+            },
+            {
+              "nom": "_ZTVSt15basic_streambufIcSt11char_traitsIcEE",
+              "iat_va": "0x40e814"
+            },
+            {
+              "nom": "_ZTVSt9basic_iosIcSt11char_traitsIcEE",
+              "iat_va": "0x40e818"
+            },
+            {
+              "nom": "_ZdaPv",
+              "iat_va": "0x40e81c"
+            },
+            {
+              "nom": "_ZdlPv",
+              "iat_va": "0x40e820"
+            },
+            {
+              "nom": "_Znaj",
+              "iat_va": "0x40e824"
+            },
+            {
+              "nom": "_Znwj",
+              "iat_va": "0x40e828"
+            },
+            {
+              "nom": "__gxx_personality_v0",
+              "iat_va": "0x40e82c"
+            }
+          ]
+        }
+      ],
+      "chaines_selectionnees": [
+        {
+          "offset": "0x7464",
+          "va": "0x409064",
+          "encodage": "ascii",
+          "texte": "SMTP Example"
+        },
+        {
+          "offset": "0x74b7",
+          "va": "0x4090b7",
+          "encodage": "ascii",
+          "texte": "Subject:"
+        },
+        {
+          "offset": "0x74c9",
+          "va": "0x4090c9",
+          "encodage": "ascii",
+          "texte": "smtp.gmail.com"
+        },
+        {
+          "offset": "0x74e6",
+          "va": "0x4090e6",
+          "encodage": "ascii",
+          "texte": "c:\\WindSyst\\log.txt"
+        },
+        {
+          "offset": "0x751f",
+          "va": "0x40911f",
+          "encodage": "ascii",
+          "texte": "smtp.laposte.net"
+        },
+        {
+          "offset": "0x759c",
+          "va": "0x40919c",
+          "encodage": "ascii",
+          "texte": "Subject: "
+        },
+        {
+          "offset": "0x7624",
+          "va": "0x409224",
+          "encodage": "ascii",
+          "texte": "EHLO localhost"
+        },
+        {
+          "offset": "0x7638",
+          "va": "0x409238",
+          "encodage": "ascii",
+          "texte": "AUTH LOGIN"
+        },
+        {
+          "offset": "0x7659",
+          "va": "0x409259",
+          "encodage": "ascii",
+          "texte": "MAIL FROM:<"
+        },
+        {
+          "offset": "0x76cf",
+          "va": "0x4092cf",
+          "encodage": "ascii",
+          "texte": "RCPT TO:<"
+        },
+        {
+          "offset": "0x76d9",
+          "va": "0x4092d9",
+          "encodage": "ascii",
+          "texte": "DATA"
+        },
+        {
+          "offset": "0x76e0",
+          "va": "0x4092e0",
+          "encodage": "ascii",
+          "texte": "QUIT"
+        }
+      ]
+    }
+  ]
+}

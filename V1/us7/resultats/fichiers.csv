@@ -1,0 +1,22 @@
+chemin,octets,sha256,role,echantillon_us2_identique
+C:\Lab\sample\virus\Env.exe,53248,e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2,executable suspect,True
+C:\Lab\sample\virus\libgcc_s_dw2-1.dll,120334,4d2e2d408d399d066b0aaef2047f7a33515c13c589832de0d9f1ba87a530c394,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\libstdc++-6.dll,1540622,79622396dc4c7afbbceca03e69f727bf1862735ee3ad671aa3ee7ada8aa446c3,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\libwinpthread-1.dll,79360,b5fe4d6408ef2baabdd168f4c7250900606468e9aeb24c71e0c833d3d715ae65,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\Qt5Core.dll,6097408,c9dbb53e5ecaabb3a543d48005c6b0d525fb99304eafcbbb8a43d29ee5211d45,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\Qt5Gui.dll,6205440,cafb07807b6afb4301d65427ced79bb95a23c827c6cda873dba0599fce5b6dde,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\Qt5Network.dll,1798144,ee27d171ae29c1f8cfeed93349f411a35b44386f513ce60b9bfd5bf68a6bdd21,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\Qt5Widgets.dll,6355456,11a43141d54232edf97aa11aa5b9b97e9235405c774ce0e011d904eaef69deaf,bibliotheque accompagnant les executables,
+C:\Lab\sample\virus\Res.exe,25088,49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e,executable suspect,True
+C:\Lab\trace.pml,80058537,0853884c7af540bab2252ac4491070614d0851909804555252be073d24be5bae,trace Process Monitor du laboratoire,
+C:\Users\Analyste\NTUSER.DAT,786432,87e47a4198d969f1e10cbb191ecf8164d3ff31e8395472490b580dc21551671e,ruche utilisateur a examiner pour la persistance,
+C:\WindSyst\Env.exe,53248,e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2,executable suspect,True
+C:\WindSyst\libgcc_s_dw2-1.dll,120334,4d2e2d408d399d066b0aaef2047f7a33515c13c589832de0d9f1ba87a530c394,bibliotheque accompagnant les executables,
+C:\WindSyst\libstdc++-6.dll,1540622,79622396dc4c7afbbceca03e69f727bf1862735ee3ad671aa3ee7ada8aa446c3,bibliotheque accompagnant les executables,
+C:\WindSyst\libwinpthread-1.dll,79360,b5fe4d6408ef2baabdd168f4c7250900606468e9aeb24c71e0c833d3d715ae65,bibliotheque accompagnant les executables,
+C:\WindSyst\log.txt,82,c105fab312066173c97a49f27da7306425cd7f4c184201bfd0b159af6b4edf38,journal associe au malware,
+C:\WindSyst\Qt5Core.dll,6097408,c9dbb53e5ecaabb3a543d48005c6b0d525fb99304eafcbbb8a43d29ee5211d45,bibliotheque accompagnant les executables,
+C:\WindSyst\Qt5Gui.dll,6205440,cafb07807b6afb4301d65427ced79bb95a23c827c6cda873dba0599fce5b6dde,bibliotheque accompagnant les executables,
+C:\WindSyst\Qt5Network.dll,1798144,ee27d171ae29c1f8cfeed93349f411a35b44386f513ce60b9bfd5bf68a6bdd21,bibliotheque accompagnant les executables,
+C:\WindSyst\Qt5Widgets.dll,6355456,11a43141d54232edf97aa11aa5b9b97e9235405c774ce0e011d904eaef69deaf,bibliotheque accompagnant les executables,
+C:\WindSyst\Res.exe,25088,49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e,executable suspect,True

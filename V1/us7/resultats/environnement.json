@@ -1,0 +1,48 @@
+{
+  "controle_utc": "2026-09-10T19:09:34.078022+00:00",
+  "image_raw": {
+    "octets_logiques": 68719476736,
+    "octets_alloues_sur_mac": 9260417024,
+    "mode": "0o644"
+  },
+  "conteneurs_verification": [
+    {
+      "image": "cyber-disk-analysis:local",
+      "image_id": "sha256:15837ddbb09395e621e27c5a7d172ddbdf70822899e554066ff6dc56f8ddbe25",
+      "reseau": "none",
+      "racine_lecture_seule": true,
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_opt": [
+        "no-new-privileges"
+      ],
+      "commande": [
+        "python",
+        "/verifier.py"
+      ],
+      "montages": [
+        {
+          "destination": "/storage",
+          "lecture_ecriture": false
+        },
+        {
+          "destination": "/images",
+          "lecture_ecriture": false
+        },
+        {
+          "destination": "/verifier.py",
+          "lecture_ecriture": false
+        },
+        {
+          "destination": "/resultats",
+          "lecture_ecriture": true
+        }
+      ]
+    }
+  ],
+  "protection_fichier_apres_acquisition": {
+    "controle_utc": "2026-09-10T19:10:35.661642+00:00",
+    "mode_sur_mac": "0o444"
+  }
+}

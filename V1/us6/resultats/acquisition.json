@@ -1,0 +1,27 @@
+{
+  "provenance": "Commandes et sorties de la seance du 10 septembre 2026, retrouvees dans son historique ; captures reutilisees en US6.",
+  "outil": "QEMU 10.0.11, moniteur HMP via socat et socket Unix /tmp/qemu-monitor.sock",
+  "ram_configuree_octets": 4294967296,
+  "portee": "Export physique ELF sans plage begin/length et sans option de paging -p ; -d lance la capture en arriere-plan.",
+  "captures": [
+    {
+      "nom": "avant",
+      "commande_hmp": "dump-guest-memory -d /storage/windows-before-malware.elf",
+      "demande_historique_utc": "2026-09-10T12:20:19.850Z",
+      "fin_constatee_historique_utc": "2026-09-10T12:20:34.734Z",
+      "statut_dump": "completed",
+      "statut_vm_apres_capture": "running",
+      "fichier_actuel": "infrastructure/windows/results/windows-before-malware.elf"
+    },
+    {
+      "nom": "apres",
+      "commande_hmp": "dump-guest-memory -d /storage/windows-after-malware.elf",
+      "demande_historique_utc": "2026-09-10T12:37:04.822Z",
+      "fin_constatee_historique_utc": "2026-09-10T12:37:51.318Z",
+      "statut_dump": "completed",
+      "statut_vm_apres_capture": "running",
+      "fichier_actuel": "cyber-windows_windows-disk:/windows-after-malware.elf"
+    }
+  ],
+  "limite_horodatage": "Les dates de demande et constat de fin proviennent des messages outils, pas de mesures a la nanoseconde de la capture. L horloge Windows est distincte."
+}

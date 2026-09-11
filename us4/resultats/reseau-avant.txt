@@ -1,0 +1,87 @@
+
+Configuration IP de Windows
+
+   Nom de l'h“te . . . . . . . . . . : DESKTOP-Q4U3M4A
+   Suffixe DNS principal . . . . . . : 
+   Type de noeud. . . . . . . . . .  : Hybride
+   Routage IP activ‚ . . . . . . . . : Non
+   Proxy WINS activ‚ . . . . . . . . : Non
+===========================================================================
+Liste d'Interfaces
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Table de routage
+===========================================================================
+Itin‚raires actifsÿ:
+Destination r‚seau    Masque r‚seau  Adr. passerelle   Adr. interface M‚trique
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+===========================================================================
+Itin‚raires persistantsÿ:
+  Aucun
+
+IPv6 Table de routage
+===========================================================================
+Itin‚raires actifsÿ:
+ If Metric Network Destination      Gateway
+  1    331 ::1/128                  On-link
+  1    331 ff00::/8                 On-link
+===========================================================================
+Itin‚raires persistantsÿ:
+  Aucun
+
+
+Name                 : Connexion au r‚seau local* 6
+Status               : Up
+InterfaceDescription : WAN Miniport (IP)
+
+Name                 : Connexion au r‚seau local* 5
+Status               : Disconnected
+InterfaceDescription : WAN Miniport (PPPOE)
+
+Name                 : Connexion au r‚seau local* 7
+Status               : Up
+InterfaceDescription : WAN Miniport (IPv6)
+
+Name                 : Ethernet (d‚bogueur du noyau)
+Status               : Not Present
+InterfaceDescription : Microsoft Kernel Debug Network Adapter
+
+Name                 : Connexion au r‚seau local* 1
+Status               : Disconnected
+InterfaceDescription : WAN Miniport (SSTP)
+
+Name                 : Teredo Tunneling Pseudo-Interface
+Status               : Not Present
+InterfaceDescription : 
+
+Name                 : Connexion au r‚seau local* 8
+Status               : Up
+InterfaceDescription : WAN Miniport (Network Monitor)
+
+Name                 : Connexion au r‚seau local* 4
+Status               : Disconnected
+InterfaceDescription : WAN Miniport (PPTP)
+
+Name                 : Microsoft IP-HTTPS Platform Interface
+Status               : Not Present
+InterfaceDescription : 
+
+Name                 : Connexion au r‚seau local* 2
+Status               : Disconnected
+InterfaceDescription : WAN Miniport (IKEv2)
+
+Name                 : Connexion au r‚seau local* 3
+Status               : Disconnected
+InterfaceDescription : WAN Miniport (L2TP)
+
+Name                 : 6to4 Adapter
+Status               : Not Present
+InterfaceDescription : 
+
+
+

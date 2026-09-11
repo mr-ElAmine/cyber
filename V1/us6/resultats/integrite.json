@@ -1,0 +1,87 @@
+{
+  "verification_utc": "2026-09-10T18:52:05.993824+00:00",
+  "captures": [
+    {
+      "capture": "avant",
+      "fichier": "windows-before-malware.elf",
+      "octets": 4311943347,
+      "sha256": "2663c98d783404068dbba24ee62f166a0f9417d2cf649a20b053ff5e16b5e9a1",
+      "format": "ELF64 little-endian x86-64 ET_CORE",
+      "segments": [
+        {
+          "adresse_physique": 0,
+          "offset_fichier": 2216,
+          "octets": 655360
+        },
+        {
+          "adresse_physique": 655360,
+          "offset_fichier": 657576,
+          "octets": 65536
+        },
+        {
+          "adresse_physique": 786432,
+          "offset_fichier": 723112,
+          "octets": 3220439040
+        },
+        {
+          "adresse_physique": 4244635648,
+          "offset_fichier": 3221162152,
+          "octets": 16777216
+        },
+        {
+          "adresse_physique": 4294705152,
+          "offset_fichier": 3237939368,
+          "octets": 262144
+        },
+        {
+          "adresse_physique": 4294967296,
+          "offset_fichier": 3238201512,
+          "octets": 1073741824
+        }
+      ],
+      "octets_physiques": 4311941120,
+      "segments_declares_complets": true
+    },
+    {
+      "capture": "apres",
+      "fichier": "windows-after-malware.elf",
+      "octets": 4311943347,
+      "sha256": "f1c5d532807b5ffba91b8dbb2c4ed0cb1edcb5912ac1d4083da83fd3fc945cc9",
+      "format": "ELF64 little-endian x86-64 ET_CORE",
+      "segments": [
+        {
+          "adresse_physique": 0,
+          "offset_fichier": 2216,
+          "octets": 655360
+        },
+        {
+          "adresse_physique": 655360,
+          "offset_fichier": 657576,
+          "octets": 65536
+        },
+        {
+          "adresse_physique": 786432,
+          "offset_fichier": 723112,
+          "octets": 3220439040
+        },
+        {
+          "adresse_physique": 4244635648,
+          "offset_fichier": 3221162152,
+          "octets": 16777216
+        },
+        {
+          "adresse_physique": 4294705152,
+          "offset_fichier": 3237939368,
+          "octets": 262144
+        },
+        {
+          "adresse_physique": 4294967296,
+          "offset_fichier": 3238201512,
+          "octets": 1073741824
+        }
+      ],
+      "octets_physiques": 4311941120,
+      "segments_declares_complets": true
+    }
+  ]
+}

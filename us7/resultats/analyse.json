@@ -1,0 +1,159 @@
+{
+  "analyse_utc": "2026-09-10T19:11:00.773723+00:00",
+  "image": "windows-first-run.raw",
+  "partition_windows": 2,
+  "versions": {
+    "dissect.hypervisor": "3.21",
+    "dissect.volume": "3.18",
+    "dissect.ntfs": "3.16"
+  },
+  "fichiers": [
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Env.exe",
+      "octets": 53248,
+      "sha256": "e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2",
+      "role": "executable suspect",
+      "echantillon_us2_identique": true
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\libgcc_s_dw2-1.dll",
+      "octets": 120334,
+      "sha256": "4d2e2d408d399d066b0aaef2047f7a33515c13c589832de0d9f1ba87a530c394",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\libstdc++-6.dll",
+      "octets": 1540622,
+      "sha256": "79622396dc4c7afbbceca03e69f727bf1862735ee3ad671aa3ee7ada8aa446c3",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\libwinpthread-1.dll",
+      "octets": 79360,
+      "sha256": "b5fe4d6408ef2baabdd168f4c7250900606468e9aeb24c71e0c833d3d715ae65",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Qt5Core.dll",
+      "octets": 6097408,
+      "sha256": "c9dbb53e5ecaabb3a543d48005c6b0d525fb99304eafcbbb8a43d29ee5211d45",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Qt5Gui.dll",
+      "octets": 6205440,
+      "sha256": "cafb07807b6afb4301d65427ced79bb95a23c827c6cda873dba0599fce5b6dde",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Qt5Network.dll",
+      "octets": 1798144,
+      "sha256": "ee27d171ae29c1f8cfeed93349f411a35b44386f513ce60b9bfd5bf68a6bdd21",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Qt5Widgets.dll",
+      "octets": 6355456,
+      "sha256": "11a43141d54232edf97aa11aa5b9b97e9235405c774ce0e011d904eaef69deaf",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Res.exe",
+      "octets": 25088,
+      "sha256": "49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e",
+      "role": "executable suspect",
+      "echantillon_us2_identique": true
+    },
+    {
+      "chemin": "C:\\Lab\\trace.pml",
+      "octets": 80058537,
+      "sha256": "0853884c7af540bab2252ac4491070614d0851909804555252be073d24be5bae",
+      "role": "trace Process Monitor du laboratoire",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\Users\\Analyste\\NTUSER.DAT",
+      "octets": 786432,
+      "sha256": "87e47a4198d969f1e10cbb191ecf8164d3ff31e8395472490b580dc21551671e",
+      "role": "ruche utilisateur a examiner pour la persistance",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\Env.exe",
+      "octets": 53248,
+      "sha256": "e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2",
+      "role": "executable suspect",
+      "echantillon_us2_identique": true
+    },
+    {
+      "chemin": "C:\\WindSyst\\libgcc_s_dw2-1.dll",
+      "octets": 120334,
+      "sha256": "4d2e2d408d399d066b0aaef2047f7a33515c13c589832de0d9f1ba87a530c394",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\libstdc++-6.dll",
+      "octets": 1540622,
+      "sha256": "79622396dc4c7afbbceca03e69f727bf1862735ee3ad671aa3ee7ada8aa446c3",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\libwinpthread-1.dll",
+      "octets": 79360,
+      "sha256": "b5fe4d6408ef2baabdd168f4c7250900606468e9aeb24c71e0c833d3d715ae65",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\log.txt",
+      "octets": 82,
+      "sha256": "c105fab312066173c97a49f27da7306425cd7f4c184201bfd0b159af6b4edf38",
+      "role": "journal associe au malware",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\Qt5Core.dll",
+      "octets": 6097408,
+      "sha256": "c9dbb53e5ecaabb3a543d48005c6b0d525fb99304eafcbbb8a43d29ee5211d45",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\Qt5Gui.dll",
+      "octets": 6205440,
+      "sha256": "cafb07807b6afb4301d65427ced79bb95a23c827c6cda873dba0599fce5b6dde",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\Qt5Network.dll",
+      "octets": 1798144,
+      "sha256": "ee27d171ae29c1f8cfeed93349f411a35b44386f513ce60b9bfd5bf68a6bdd21",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\Qt5Widgets.dll",
+      "octets": 6355456,
+      "sha256": "11a43141d54232edf97aa11aa5b9b97e9235405c774ce0e011d904eaef69deaf",
+      "role": "bibliotheque accompagnant les executables",
+      "echantillon_us2_identique": null
+    },
+    {
+      "chemin": "C:\\WindSyst\\Res.exe",
+      "octets": 25088,
+      "sha256": "49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e",
+      "role": "executable suspect",
+      "echantillon_us2_identique": true
+    }
+  ]
+}

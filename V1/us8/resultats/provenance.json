@@ -1,0 +1,64 @@
+{
+  "debut_utc": "2026-09-10T19:29:02.269265+00:00",
+  "fin_utc": "2026-09-10T19:30:02.078852+00:00",
+  "image_raw_sha256_recalcule": "9b0b50283470c02c0a26ec6af766f85c40589fb447d33395bed392b5c06e70a4",
+  "image_raw_octets": 68719476736,
+  "fichiers_disque_relus": [
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Env.exe",
+      "octets": 53248,
+      "sha256": "e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2"
+    },
+    {
+      "chemin": "C:\\Lab\\sample\\virus\\Res.exe",
+      "octets": 25088,
+      "sha256": "49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e"
+    },
+    {
+      "chemin": "C:\\Lab\\trace.pml",
+      "octets": 80058537,
+      "sha256": "0853884c7af540bab2252ac4491070614d0851909804555252be073d24be5bae"
+    },
+    {
+      "chemin": "C:\\Users\\Analyste\\NTUSER.DAT",
+      "octets": 786432,
+      "sha256": "87e47a4198d969f1e10cbb191ecf8164d3ff31e8395472490b580dc21551671e"
+    },
+    {
+      "chemin": "C:\\WindSyst\\Env.exe",
+      "octets": 53248,
+      "sha256": "e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2"
+    },
+    {
+      "chemin": "C:\\WindSyst\\log.txt",
+      "octets": 82,
+      "sha256": "c105fab312066173c97a49f27da7306425cd7f4c184201bfd0b159af6b4edf38"
+    },
+    {
+      "chemin": "C:\\WindSyst\\Res.exe",
+      "octets": 25088,
+      "sha256": "49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e"
+    }
+  ],
+  "sha256_resultats_utilises": {
+    "/ram/avant-pslist.json": "7b2911cd86ddd8a69281da68bb9124893d919546efcdb12dedc1275ed6390db2",
+    "/ram/apres-pslist.json": "dfadc16912cd0351b5536e56c1f13e41a100294709ffaedff06665d79977389e",
+    "/ram/apres-psscan.json": "bd00b8c683e5268f344c30831d9b1a85497c675e47246980086e371dc594b04e",
+    "/ram/apres-cmdline.json": "be87fb4c3ced37a51d571e7818846d22dff1bd5b9eff39c10bbee2af0744d296",
+    "/ram/apres-dlllist.json": "28e20217a348e495a479fddd2a621c01e632c84c8cc9512f8846c7d5955f87d3",
+    "/ram/integrite.json": "bb8e90356e2b8b56da3739720aa718c0ffa940d8963b2b230e68bd30d71b4567",
+    "/ram/apres-info.json": "857db55d2c334b6cb38897c14f6a0762ec46521254610dfa5e7b3640f807f5dc",
+    "/ram/acquisition.json": "3062d136835650b154a61ce680d86f7237ca7d195a372ef4276a3292aa1b763e",
+    "/disque/analyse.json": "9c039301b12f49343b2e53da868d51e3661371bacefd0d00b9144e668379a9fb",
+    "/disque/integrite.json": "a905b1600d7da4de4caeea24bd35c7b10e892c4ba14694848342d8641df9d62d",
+    "/dynamique/resume.json": "f44c726ff005a0e1ccef5e1d45266042973f92db9327f16b9c102bc7f0ed39a9",
+    "/dynamique/evenements.csv": "b4d0959323fdbd80931b7d7068fc0ce6fa1dd8fd69f63fc0194d3722b60b2f63"
+  },
+  "memoire": "Resultats Volatility reutilises de l US6 ; aucune nouvelle extraction RAM.",
+  "versions": {
+    "dissect.hypervisor": "3.21",
+    "dissect.volume": "3.18",
+    "dissect.ntfs": "3.16",
+    "dissect.regf": "3.14"
+  }
+}

@@ -1,0 +1,69 @@
+name: cyber-windows
+
+services:
+  vm:
+    build: {context: ., target: vm}
+    image: cyber-windows-vm:local
+    # PC x64 : 4 Gio de RAM, aucun réseau, disque et DVD d'installation.
+    command: >-
+      qemu-system-x86_64 -name cyber-windows
+      -machine pc,accel=tcg -cpu qemu64 -smp 2 -m 4096
+      -device qemu-xhci -device usb-tablet
+      -nic none
+      -drive file=/storage/windows.qcow2,format=qcow2,if=ide,index=0
+      -drive file=/media/windows.iso,format=raw,media=cdrom,readonly=on,if=ide,index=2
+      -boot order=c,once=d,menu=on
+      -vga std -display none -vnc unix:/run/console/vnc.sock
+      -monitor unix:/tmp/qemu-monitor.sock,server=on,wait=off -serial none -parallel none
+    network_mode: none
+    user: "1000:1000"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    volumes:
+      - windows-disk:/storage
+      - console-socket:/run/console
+      # L'ISO reste en lecture seule ; un dossier absent provoque une erreur.
+      - type: bind
+        source: ./media
+        target: /media
+        read_only: true
+        bind: {create_host_path: false}
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,noexec,size=64m,mode=1777
+    mem_limit: 5120m
+    memswap_limit: 5632m
+    cpus: 2.0
+    pids_limit: 128
+    restart: "no"
+
+  # Affichage seul : accès depuis le Mac, aucun accès au disque Windows.
+  console:
+    build: {context: ., target: console}
+    image: cyber-windows-console:local
+    depends_on: [vm]
+    ports:
+      - "127.0.0.1:6085:6080"
+    networks: [administration]
+    user: "1000:1000"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    volumes:
+      - console-socket:/run/console:ro
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,noexec,size=16m,mode=1777
+    mem_limit: 192m
+    memswap_limit: 192m
+    cpus: 0.5
+    pids_limit: 64
+    init: true
+    restart: "no"
+
+volumes:
+  windows-disk:
+  console-socket:
+
+networks:
+  # Réseau de la console ; la VM reste en network_mode: none.
+  administration: {}

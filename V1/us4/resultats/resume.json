@@ -1,0 +1,4247 @@
+{
+  "analyse_utc": "2026-09-10T16:06:29.791852+00:00",
+  "versions": {
+    "dissect.hypervisor": "3.21",
+    "dissect.volume": "3.18",
+    "dissect.ntfs": "3.16",
+    "dissect.regf": "3.14",
+    "procmon-parser": "0.4.0"
+  },
+  "snapshot": "malware-first-run",
+  "trace": "C:\\Lab\\trace.pml",
+  "trace_octets": 80058537,
+  "trace_sha256": "0853884c7af540bab2252ac4491070614d0851909804555252be073d24be5bae",
+  "total_evenements": 218035,
+  "classes": {
+    "Registry": 53339,
+    "Process": 1471,
+    "File_System": 138686,
+    "Profiling": 24389,
+    "IPC": 150
+  },
+  "premier_evenement_windows_utc": "2026-09-10T10:32:32.313691+00:00",
+  "dernier_evenement_windows_utc": "2026-09-10T10:36:32.485489+00:00",
+  "racines_pid": [
+    6064
+  ],
+  "processus": [
+    {
+      "pid": 516,
+      "parent_pid": 3616,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Qt5Cored.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100194158194
+    },
+    {
+      "pid": 1200,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Qt5Core.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100230668680
+    },
+    {
+      "pid": 1312,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Qt5Network.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100218058838
+    },
+    {
+      "pid": 1324,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Qt5Widgets.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100210356015
+    },
+    {
+      "pid": 1516,
+      "parent_pid": 2584,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  libgcc_s_dw2-1.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100166906085
+    },
+    {
+      "pid": 1544,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c mkdir c:\\WindSyst",
+      "debut_filetime": 134335100158763512
+    },
+    {
+      "pid": 2152,
+      "parent_pid": 3932,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  qoffscreen.dll c:\\WindSyst\\platforms /S",
+      "debut_filetime": 134335100248050292
+    },
+    {
+      "pid": 2192,
+      "parent_pid": 4192,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  qwindows.dll c:\\WindSyst\\platforms /S",
+      "debut_filetime": 134335100253535994
+    },
+    {
+      "pid": 2448,
+      "parent_pid": 2500,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  qminimal.dll c:\\WindSyst\\platforms /S",
+      "debut_filetime": 134335100242876431
+    },
+    {
+      "pid": 2500,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY qminimal.dll c:\\WindSyst\\platforms /S",
+      "debut_filetime": 134335100240288667
+    },
+    {
+      "pid": 2580,
+      "parent_pid": 3784,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  libwinpthread-1.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100182874544
+    },
+    {
+      "pid": 2584,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY libgcc_s_dw2-1.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100164328223
+    },
+    {
+      "pid": 2804,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Qt5Gui.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100223863151
+    },
+    {
+      "pid": 3104,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Res.exe c:\\WindSyst /S",
+      "debut_filetime": 134335100197295356
+    },
+    {
+      "pid": 3616,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Qt5Cored.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100188099707
+    },
+    {
+      "pid": 3784,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY libwinpthread-1.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100179122025
+    },
+    {
+      "pid": 3932,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY qoffscreen.dll c:\\WindSyst\\platforms /S",
+      "debut_filetime": 134335100245545569
+    },
+    {
+      "pid": 4192,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY qwindows.dll c:\\WindSyst\\platforms /S",
+      "debut_filetime": 134335100250923336
+    },
+    {
+      "pid": 4232,
+      "parent_pid": 1200,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Qt5Core.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100233198843
+    },
+    {
+      "pid": 4356,
+      "parent_pid": 2804,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Qt5Gui.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100226809946
+    },
+    {
+      "pid": 4452,
+      "parent_pid": 3104,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Res.exe c:\\WindSyst /S",
+      "debut_filetime": 134335100199811296
+    },
+    {
+      "pid": 4752,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY Env.exe c:\\WindSyst /S",
+      "debut_filetime": 134335100204012761
+    },
+    {
+      "pid": 4784,
+      "parent_pid": 1324,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Qt5Widgets.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100213071030
+    },
+    {
+      "pid": 5304,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c XCOPY libstdc++-6.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100171003479
+    },
+    {
+      "pid": 5332,
+      "parent_pid": 6064,
+      "nom": "cmd.exe",
+      "image": "C:\\Windows\\SysWOW64\\cmd.exe",
+      "commande": "C:\\Windows\\system32\\cmd.exe /c mkdir c:\\WindSyst\\platforms",
+      "debut_filetime": 134335100237391297
+    },
+    {
+      "pid": 5548,
+      "parent_pid": 4752,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Env.exe c:\\WindSyst /S",
+      "debut_filetime": 134335100206640774
+    },
+    {
+      "pid": 5572,
+      "parent_pid": 1312,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  Qt5Network.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100219744703
+    },
+    {
+      "pid": 6064,
+      "parent_pid": 5236,
+      "nom": "Res.exe",
+      "image": "C:\\lab\\sample\\virus\\Res.exe",
+      "commande": "\"C:\\lab\\sample\\virus\\Res.exe\"",
+      "debut_filetime": 134335100145197278
+    },
+    {
+      "pid": 6084,
+      "parent_pid": 5304,
+      "nom": "xcopy.exe",
+      "image": "C:\\Windows\\SysWOW64\\xcopy.exe",
+      "commande": "XCOPY  libstdc++-6.dll c:\\WindSyst /S",
+      "debut_filetime": 134335100173281211
+    }
+  ],
+  "operations_par_processus": [
+    {
+      "pid": 516,
+      "operation": "CloseFile",
+      "nombre": 17
+    },
+    {
+      "pid": 516,
+      "operation": "CreateFile",
+      "nombre": 19
+    },
+    {
+      "pid": 516,
+      "operation": "CreateFileMapping",
+      "nombre": 12
+    },
+    {
+      "pid": 516,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 12
+    },
+    {
+      "pid": 516,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 18
+    },
+    {
+      "pid": 516,
+      "operation": "Load_Image",
+      "nombre": 15
+    },
+    {
+      "pid": 516,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 516,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 516,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 6
+    },
+    {
+      "pid": 516,
+      "operation": "QueryDirectory",
+      "nombre": 2
+    },
+    {
+      "pid": 516,
+      "operation": "QueryNameInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 516,
+      "operation": "QueryOpen",
+      "nombre": 7
+    },
+    {
+      "pid": 516,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 516,
+      "operation": "RegCloseKey",
+      "nombre": 31
+    },
+    {
+      "pid": 516,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 516,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 516,
+      "operation": "RegOpenKey",
+      "nombre": 83
+    },
+    {
+      "pid": 516,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 516,
+      "operation": "RegQueryValue",
+      "nombre": 34
+    },
+    {
+      "pid": 516,
+      "operation": "RegSetInfoKey",
+      "nombre": 19
+    },
+    {
+      "pid": 516,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 516,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 1200,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 1200,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 1200,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 1200,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 1200,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 1200,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 1200,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 1200,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 1200,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 1200,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 1200,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 1200,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 1200,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 1200,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 1200,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 1200,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1200,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 1200,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 1200,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 1200,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 1200,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 1200,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 1200,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 1200,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 1200,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 1312,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 1312,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 1312,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 1312,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 1312,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 1312,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 1312,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 1312,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 1312,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 1312,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 1312,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 1312,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 1312,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 1312,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 1312,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 1312,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1312,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 1312,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 1312,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 1312,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 1312,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 1312,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 1312,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 1312,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 1312,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 1324,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 1324,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 1324,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 1324,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 1324,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 1324,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 1324,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 1324,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 1324,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 1324,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 1324,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 1324,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 1324,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 1324,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 1324,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 1324,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1324,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 1324,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 1324,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 1324,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 1324,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 1324,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 1324,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 1324,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 1324,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 1516,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 1516,
+      "operation": "CreateFile",
+      "nombre": 39
+    },
+    {
+      "pid": 1516,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 1516,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 1516,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 29
+    },
+    {
+      "pid": 1516,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 1516,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryEAFile",
+      "nombre": 5
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 1516,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 6
+    },
+    {
+      "pid": 1516,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "ReadFile",
+      "nombre": 38
+    },
+    {
+      "pid": 1516,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 1516,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 1516,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 1516,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 1516,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 1516,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 1516,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 1516,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 1516,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1516,
+      "operation": "Thread_Create",
+      "nombre": 4
+    },
+    {
+      "pid": 1516,
+      "operation": "Thread_Exit",
+      "nombre": 4
+    },
+    {
+      "pid": 1516,
+      "operation": "WriteFile",
+      "nombre": 1
+    },
+    {
+      "pid": 1544,
+      "operation": "CloseFile",
+      "nombre": 9
+    },
+    {
+      "pid": 1544,
+      "operation": "CreateFile",
+      "nombre": 11
+    },
+    {
+      "pid": 1544,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 9
+    },
+    {
+      "pid": 1544,
+      "operation": "Load_Image",
+      "nombre": 12
+    },
+    {
+      "pid": 1544,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 1544,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 1544,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 1544,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 1544,
+      "operation": "QueryDirectory",
+      "nombre": 3
+    },
+    {
+      "pid": 1544,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 1544,
+      "operation": "QueryOpen",
+      "nombre": 3
+    },
+    {
+      "pid": 1544,
+      "operation": "ReadFile",
+      "nombre": 16
+    },
+    {
+      "pid": 1544,
+      "operation": "RegCloseKey",
+      "nombre": 38
+    },
+    {
+      "pid": 1544,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 1544,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 1544,
+      "operation": "RegOpenKey",
+      "nombre": 98
+    },
+    {
+      "pid": 1544,
+      "operation": "RegQueryKey",
+      "nombre": 48
+    },
+    {
+      "pid": 1544,
+      "operation": "RegQueryValue",
+      "nombre": 42
+    },
+    {
+      "pid": 1544,
+      "operation": "RegSetInfoKey",
+      "nombre": 23
+    },
+    {
+      "pid": 1544,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 1544,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2152,
+      "operation": "CloseFile",
+      "nombre": 17
+    },
+    {
+      "pid": 2152,
+      "operation": "CreateFile",
+      "nombre": 19
+    },
+    {
+      "pid": 2152,
+      "operation": "CreateFileMapping",
+      "nombre": 12
+    },
+    {
+      "pid": 2152,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 12
+    },
+    {
+      "pid": 2152,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 18
+    },
+    {
+      "pid": 2152,
+      "operation": "Load_Image",
+      "nombre": 15
+    },
+    {
+      "pid": 2152,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2152,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2152,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 6
+    },
+    {
+      "pid": 2152,
+      "operation": "QueryDirectory",
+      "nombre": 2
+    },
+    {
+      "pid": 2152,
+      "operation": "QueryNameInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 2152,
+      "operation": "QueryOpen",
+      "nombre": 7
+    },
+    {
+      "pid": 2152,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2152,
+      "operation": "RegCloseKey",
+      "nombre": 31
+    },
+    {
+      "pid": 2152,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2152,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2152,
+      "operation": "RegOpenKey",
+      "nombre": 83
+    },
+    {
+      "pid": 2152,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 2152,
+      "operation": "RegQueryValue",
+      "nombre": 34
+    },
+    {
+      "pid": 2152,
+      "operation": "RegSetInfoKey",
+      "nombre": 19
+    },
+    {
+      "pid": 2152,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2152,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2192,
+      "operation": "CloseFile",
+      "nombre": 17
+    },
+    {
+      "pid": 2192,
+      "operation": "CreateFile",
+      "nombre": 19
+    },
+    {
+      "pid": 2192,
+      "operation": "CreateFileMapping",
+      "nombre": 12
+    },
+    {
+      "pid": 2192,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 12
+    },
+    {
+      "pid": 2192,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 18
+    },
+    {
+      "pid": 2192,
+      "operation": "Load_Image",
+      "nombre": 15
+    },
+    {
+      "pid": 2192,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2192,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2192,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 6
+    },
+    {
+      "pid": 2192,
+      "operation": "QueryDirectory",
+      "nombre": 2
+    },
+    {
+      "pid": 2192,
+      "operation": "QueryNameInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 2192,
+      "operation": "QueryOpen",
+      "nombre": 7
+    },
+    {
+      "pid": 2192,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2192,
+      "operation": "RegCloseKey",
+      "nombre": 31
+    },
+    {
+      "pid": 2192,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2192,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2192,
+      "operation": "RegOpenKey",
+      "nombre": 83
+    },
+    {
+      "pid": 2192,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 2192,
+      "operation": "RegQueryValue",
+      "nombre": 34
+    },
+    {
+      "pid": 2192,
+      "operation": "RegSetInfoKey",
+      "nombre": 19
+    },
+    {
+      "pid": 2192,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2192,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2448,
+      "operation": "CloseFile",
+      "nombre": 17
+    },
+    {
+      "pid": 2448,
+      "operation": "CreateFile",
+      "nombre": 19
+    },
+    {
+      "pid": 2448,
+      "operation": "CreateFileMapping",
+      "nombre": 12
+    },
+    {
+      "pid": 2448,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 12
+    },
+    {
+      "pid": 2448,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 18
+    },
+    {
+      "pid": 2448,
+      "operation": "Load_Image",
+      "nombre": 15
+    },
+    {
+      "pid": 2448,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2448,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 2448,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2448,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 6
+    },
+    {
+      "pid": 2448,
+      "operation": "QueryDirectory",
+      "nombre": 2
+    },
+    {
+      "pid": 2448,
+      "operation": "QueryNameInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 2448,
+      "operation": "QueryOpen",
+      "nombre": 7
+    },
+    {
+      "pid": 2448,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2448,
+      "operation": "RegCloseKey",
+      "nombre": 31
+    },
+    {
+      "pid": 2448,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2448,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2448,
+      "operation": "RegOpenKey",
+      "nombre": 83
+    },
+    {
+      "pid": 2448,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 2448,
+      "operation": "RegQueryValue",
+      "nombre": 34
+    },
+    {
+      "pid": 2448,
+      "operation": "RegSetInfoKey",
+      "nombre": 19
+    },
+    {
+      "pid": 2448,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2448,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2500,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 2500,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 2500,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 2500,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 2500,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 2500,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 2500,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 2500,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2500,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 2500,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2500,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 2500,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 2500,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 2500,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 2500,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2500,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2500,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 2500,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2500,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2500,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 2500,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 2500,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 2500,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 2500,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2500,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2580,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 2580,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 2580,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 2580,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 2580,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 2580,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 2580,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 2580,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 2580,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "ReadFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2580,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 2580,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2580,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2580,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 2580,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 2580,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 2580,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 2580,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 2580,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2580,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2580,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2580,
+      "operation": "WriteFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2584,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 2584,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 2584,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 2584,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 2584,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 2584,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 2584,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 2584,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2584,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2584,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 7
+    },
+    {
+      "pid": 2584,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 2584,
+      "operation": "QueryEAFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2584,
+      "operation": "QueryNameInformationFile",
+      "nombre": 12
+    },
+    {
+      "pid": 2584,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 2584,
+      "operation": "QuerySecurityFile",
+      "nombre": 3
+    },
+    {
+      "pid": 2584,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2584,
+      "operation": "ReadFile",
+      "nombre": 3
+    },
+    {
+      "pid": 2584,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 2584,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2584,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2584,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 2584,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 2584,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 2584,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 2584,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2584,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 2804,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 2804,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 2804,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 2804,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 2804,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 2804,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 2804,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 2804,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 2804,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 2804,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 2804,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 2804,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 2804,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 2804,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 2804,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 2804,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 2804,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 2804,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 2804,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 2804,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 2804,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 2804,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 2804,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 2804,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 3104,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 3104,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 3104,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 3104,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 3104,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 3104,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 3104,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 3104,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 3104,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 3104,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 3104,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 3104,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 3104,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 3104,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 3104,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 3104,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 3104,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 3104,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 3104,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 3104,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 3104,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 3104,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 3104,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 3104,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 3104,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 3616,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 3616,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 3616,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 3616,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 3616,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 3616,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 3616,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 3616,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 3616,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 3616,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 3616,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 3616,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 3616,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 3616,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 3616,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 3616,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 3616,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 3616,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 3616,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 3616,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 3616,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 3616,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 3616,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 3616,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 3616,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 3784,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 3784,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 3784,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 3784,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 3784,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 3784,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 3784,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 3784,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 3784,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 3784,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 3784,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 3784,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 3784,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 3784,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 3784,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 3784,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 3784,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 3784,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 3784,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 3784,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 3784,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 3784,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 3784,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 3784,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 3784,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 3932,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 3932,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 3932,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 3932,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 3932,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 3932,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 3932,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 3932,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 3932,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 3932,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 3932,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 3932,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 3932,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 3932,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 3932,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 3932,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 3932,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 3932,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 3932,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 3932,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 3932,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 3932,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 3932,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 3932,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4192,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 4192,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 4192,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 4192,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 4192,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 4192,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 4192,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 4192,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 4192,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 4192,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 4192,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 4192,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 4192,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 4192,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 4192,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 4192,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4192,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 4192,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 4192,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 4192,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 4192,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 4192,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 4192,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 4192,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 4192,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4232,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 4232,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 4232,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 4232,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 4232,
+      "operation": "FileSystemControl",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 4232,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 4232,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 4232,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 4232,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "ReadFile",
+      "nombre": 12
+    },
+    {
+      "pid": 4232,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 4232,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 4232,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 4232,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 4232,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 4232,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 4232,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 4232,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 4232,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4232,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 4232,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4232,
+      "operation": "WriteFile",
+      "nombre": 12
+    },
+    {
+      "pid": 4356,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 4356,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 4356,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 4356,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 4356,
+      "operation": "FileSystemControl",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 4356,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 4356,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 4356,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 4356,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "ReadFile",
+      "nombre": 12
+    },
+    {
+      "pid": 4356,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 4356,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 4356,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 4356,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 4356,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 4356,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 4356,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 4356,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 4356,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4356,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 4356,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4356,
+      "operation": "WriteFile",
+      "nombre": 12
+    },
+    {
+      "pid": 4452,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 4452,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 4452,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 4452,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 4452,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 4452,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 4452,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 4452,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 4452,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "ReadFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 4452,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 4452,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 4452,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 4452,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 4452,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 4452,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 4452,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 4452,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4452,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 4452,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4452,
+      "operation": "WriteFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4752,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 4752,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 4752,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 4752,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 4752,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 4752,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 4752,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 4752,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 4752,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 4752,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 4752,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 4752,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 4752,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 4752,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 4752,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4752,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 4752,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 4752,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 4752,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 4752,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 4752,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 4752,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 4752,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 4752,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4784,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 4784,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 4784,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 4784,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 4784,
+      "operation": "FileSystemControl",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 4784,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 4784,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 4784,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 4784,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "ReadFile",
+      "nombre": 13
+    },
+    {
+      "pid": 4784,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 4784,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 4784,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 4784,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 4784,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 4784,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 4784,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 4784,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 4784,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 4784,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 4784,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 4784,
+      "operation": "WriteFile",
+      "nombre": 13
+    },
+    {
+      "pid": 5304,
+      "operation": "CloseFile",
+      "nombre": 16
+    },
+    {
+      "pid": 5304,
+      "operation": "CreateFile",
+      "nombre": 17
+    },
+    {
+      "pid": 5304,
+      "operation": "CreateFileMapping",
+      "nombre": 4
+    },
+    {
+      "pid": 5304,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 4
+    },
+    {
+      "pid": 5304,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 16
+    },
+    {
+      "pid": 5304,
+      "operation": "Load_Image",
+      "nombre": 13
+    },
+    {
+      "pid": 5304,
+      "operation": "Process_Create",
+      "nombre": 1
+    },
+    {
+      "pid": 5304,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 5304,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 5304,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 5304,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 5
+    },
+    {
+      "pid": 5304,
+      "operation": "QueryDirectory",
+      "nombre": 7
+    },
+    {
+      "pid": 5304,
+      "operation": "QueryNameInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 5304,
+      "operation": "QueryOpen",
+      "nombre": 4
+    },
+    {
+      "pid": 5304,
+      "operation": "QuerySecurityFile",
+      "nombre": 2
+    },
+    {
+      "pid": 5304,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5304,
+      "operation": "RegCloseKey",
+      "nombre": 45
+    },
+    {
+      "pid": 5304,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 5304,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 5304,
+      "operation": "RegOpenKey",
+      "nombre": 119
+    },
+    {
+      "pid": 5304,
+      "operation": "RegQueryKey",
+      "nombre": 50
+    },
+    {
+      "pid": 5304,
+      "operation": "RegQueryValue",
+      "nombre": 52
+    },
+    {
+      "pid": 5304,
+      "operation": "RegSetInfoKey",
+      "nombre": 29
+    },
+    {
+      "pid": 5304,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 5304,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 5332,
+      "operation": "CloseFile",
+      "nombre": 9
+    },
+    {
+      "pid": 5332,
+      "operation": "CreateFile",
+      "nombre": 10
+    },
+    {
+      "pid": 5332,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 10
+    },
+    {
+      "pid": 5332,
+      "operation": "Load_Image",
+      "nombre": 12
+    },
+    {
+      "pid": 5332,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 5332,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 5332,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 2
+    },
+    {
+      "pid": 5332,
+      "operation": "QueryDirectory",
+      "nombre": 3
+    },
+    {
+      "pid": 5332,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 5332,
+      "operation": "QueryOpen",
+      "nombre": 3
+    },
+    {
+      "pid": 5332,
+      "operation": "RegCloseKey",
+      "nombre": 38
+    },
+    {
+      "pid": 5332,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 5332,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 5332,
+      "operation": "RegOpenKey",
+      "nombre": 98
+    },
+    {
+      "pid": 5332,
+      "operation": "RegQueryKey",
+      "nombre": 48
+    },
+    {
+      "pid": 5332,
+      "operation": "RegQueryValue",
+      "nombre": 42
+    },
+    {
+      "pid": 5332,
+      "operation": "RegSetInfoKey",
+      "nombre": 23
+    },
+    {
+      "pid": 5332,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 5332,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 5548,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 5548,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 5548,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 5548,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 5548,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 5548,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 5548,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 5548,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 5548,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "ReadFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 5548,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 5548,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 5548,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 5548,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 5548,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 5548,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 5548,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 5548,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5548,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 5548,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 5548,
+      "operation": "WriteFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "CloseFile",
+      "nombre": 36
+    },
+    {
+      "pid": 5572,
+      "operation": "CreateFile",
+      "nombre": 38
+    },
+    {
+      "pid": 5572,
+      "operation": "CreateFileMapping",
+      "nombre": 14
+    },
+    {
+      "pid": 5572,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 14
+    },
+    {
+      "pid": 5572,
+      "operation": "FileSystemControl",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 35
+    },
+    {
+      "pid": 5572,
+      "operation": "Load_Image",
+      "nombre": 19
+    },
+    {
+      "pid": 5572,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 11
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryOpen",
+      "nombre": 9
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 5572,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 5572,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "ReadFile",
+      "nombre": 7
+    },
+    {
+      "pid": 5572,
+      "operation": "RegCloseKey",
+      "nombre": 33
+    },
+    {
+      "pid": 5572,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 5572,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 5572,
+      "operation": "RegOpenKey",
+      "nombre": 87
+    },
+    {
+      "pid": 5572,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 5572,
+      "operation": "RegQueryValue",
+      "nombre": 41
+    },
+    {
+      "pid": 5572,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 5572,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 5572,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 5572,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 5572,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 5572,
+      "operation": "WriteFile",
+      "nombre": 7
+    },
+    {
+      "pid": 6064,
+      "operation": "CloseFile",
+      "nombre": 124
+    },
+    {
+      "pid": 6064,
+      "operation": "CreateFile",
+      "nombre": 140
+    },
+    {
+      "pid": 6064,
+      "operation": "CreateFileMapping",
+      "nombre": 64
+    },
+    {
+      "pid": 6064,
+      "operation": "FASTIO_ACQUIRE_FOR_CC_FLUSH",
+      "nombre": 4
+    },
+    {
+      "pid": 6064,
+      "operation": "FASTIO_RELEASE_FOR_CC_FLUSH",
+      "nombre": 4
+    },
+    {
+      "pid": 6064,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 64
+    },
+    {
+      "pid": 6064,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 96
+    },
+    {
+      "pid": 6064,
+      "operation": "Load_Image",
+      "nombre": 37
+    },
+    {
+      "pid": 6064,
+      "operation": "Process_Create",
+      "nombre": 15
+    },
+    {
+      "pid": 6064,
+      "operation": "Process_Profiling",
+      "nombre": 178
+    },
+    {
+      "pid": 6064,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 6064,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 81
+    },
+    {
+      "pid": 6064,
+      "operation": "QueryEAFile",
+      "nombre": 4
+    },
+    {
+      "pid": 6064,
+      "operation": "QueryNameInformationFile",
+      "nombre": 58
+    },
+    {
+      "pid": 6064,
+      "operation": "QueryOpen",
+      "nombre": 42
+    },
+    {
+      "pid": 6064,
+      "operation": "QuerySecurityFile",
+      "nombre": 97
+    },
+    {
+      "pid": 6064,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 22
+    },
+    {
+      "pid": 6064,
+      "operation": "ReadFile",
+      "nombre": 45
+    },
+    {
+      "pid": 6064,
+      "operation": "RegCloseKey",
+      "nombre": 97
+    },
+    {
+      "pid": 6064,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 6064,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 6064,
+      "operation": "RegOpenKey",
+      "nombre": 301
+    },
+    {
+      "pid": 6064,
+      "operation": "RegQueryKey",
+      "nombre": 106
+    },
+    {
+      "pid": 6064,
+      "operation": "RegQueryValue",
+      "nombre": 163
+    },
+    {
+      "pid": 6064,
+      "operation": "RegSetInfoKey",
+      "nombre": 75
+    },
+    {
+      "pid": 6064,
+      "operation": "RegSetValue",
+      "nombre": 2
+    },
+    {
+      "pid": 6064,
+      "operation": "Thread_Create",
+      "nombre": 4
+    },
+    {
+      "pid": 6064,
+      "operation": "Thread_Exit",
+      "nombre": 2
+    },
+    {
+      "pid": 6064,
+      "operation": "WriteFile",
+      "nombre": 9
+    },
+    {
+      "pid": 6084,
+      "operation": "CloseFile",
+      "nombre": 38
+    },
+    {
+      "pid": 6084,
+      "operation": "CreateFile",
+      "nombre": 40
+    },
+    {
+      "pid": 6084,
+      "operation": "CreateFileMapping",
+      "nombre": 16
+    },
+    {
+      "pid": 6084,
+      "operation": "FASTIO_RELEASE_FOR_SECTION_SYNCHRONIZATION",
+      "nombre": 16
+    },
+    {
+      "pid": 6084,
+      "operation": "FileSystemControl",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "IRP_MJ_CLOSE",
+      "nombre": 37
+    },
+    {
+      "pid": 6084,
+      "operation": "Load_Image",
+      "nombre": 20
+    },
+    {
+      "pid": 6084,
+      "operation": "Process_Exit",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "Process_Profiling",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "Process_Start",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryAttributeInformationVolume",
+      "nombre": 2
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryAttributeTagFile",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryBasicInformationFile",
+      "nombre": 12
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryDirectory",
+      "nombre": 16
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryEaInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryNameInformationFile",
+      "nombre": 8
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryOpen",
+      "nombre": 10
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryRemoteProtocolInformation",
+      "nombre": 2
+    },
+    {
+      "pid": 6084,
+      "operation": "QuerySecurityFile",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryStandardInformationFile",
+      "nombre": 3
+    },
+    {
+      "pid": 6084,
+      "operation": "QueryStreamInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "ReadFile",
+      "nombre": 7
+    },
+    {
+      "pid": 6084,
+      "operation": "RegCloseKey",
+      "nombre": 38
+    },
+    {
+      "pid": 6084,
+      "operation": "RegEnumKey",
+      "nombre": 2
+    },
+    {
+      "pid": 6084,
+      "operation": "RegEnumValue",
+      "nombre": 6
+    },
+    {
+      "pid": 6084,
+      "operation": "RegOpenKey",
+      "nombre": 97
+    },
+    {
+      "pid": 6084,
+      "operation": "RegQueryKey",
+      "nombre": 23
+    },
+    {
+      "pid": 6084,
+      "operation": "RegQueryValue",
+      "nombre": 46
+    },
+    {
+      "pid": 6084,
+      "operation": "RegSetInfoKey",
+      "nombre": 21
+    },
+    {
+      "pid": 6084,
+      "operation": "SetBasicInformationFile",
+      "nombre": 4
+    },
+    {
+      "pid": 6084,
+      "operation": "SetEndOfFileInformationFile",
+      "nombre": 1
+    },
+    {
+      "pid": 6084,
+      "operation": "Thread_Create",
+      "nombre": 3
+    },
+    {
+      "pid": 6084,
+      "operation": "Thread_Exit",
+      "nombre": 3
+    },
+    {
+      "pid": 6084,
+      "operation": "WriteFile",
+      "nombre": 6
+    }
+  ],
+  "evenements_selectionnes": 529,
+  "evenements_reseau_famille": 0,
+  "avant": {
+    "valeurs_run": {},
+    "fichiers": []
+  },
+  "apres": {
+    "valeurs_run": {
+      "Res": "C:\\WindSyst\\Res.exe",
+      "Env": "C:\\WindSyst\\Env.exe"
+    },
+    "fichiers": [
+      {
+        "nom": "Env.exe",
+        "dossier": false,
+        "octets": 53248,
+        "sha256": "e09ec2098363a129de143fdaf73ad6e2e61266fba3f638a25214af3a8bc8f2f2"
+      },
+      {
+        "nom": "libgcc_s_dw2-1.dll",
+        "dossier": false,
+        "octets": 120334,
+        "sha256": "4d2e2d408d399d066b0aaef2047f7a33515c13c589832de0d9f1ba87a530c394"
+      },
+      {
+        "nom": "libstdc++-6.dll",
+        "dossier": false,
+        "octets": 1540622,
+        "sha256": "79622396dc4c7afbbceca03e69f727bf1862735ee3ad671aa3ee7ada8aa446c3"
+      },
+      {
+        "nom": "libwinpthread-1.dll",
+        "dossier": false,
+        "octets": 79360,
+        "sha256": "b5fe4d6408ef2baabdd168f4c7250900606468e9aeb24c71e0c833d3d715ae65"
+      },
+      {
+        "nom": "log.txt",
+        "dossier": false,
+        "octets": 82,
+        "sha256": "c105fab312066173c97a49f27da7306425cd7f4c184201bfd0b159af6b4edf38",
+        "phrase_test_complete_presente": false
+      },
+      {
+        "nom": "platforms",
+        "dossier": true
+      },
+      {
+        "nom": "Qt5Core.dll",
+        "dossier": false,
+        "octets": 6097408,
+        "sha256": "c9dbb53e5ecaabb3a543d48005c6b0d525fb99304eafcbbb8a43d29ee5211d45"
+      },
+      {
+        "nom": "Qt5Gui.dll",
+        "dossier": false,
+        "octets": 6205440,
+        "sha256": "cafb07807b6afb4301d65427ced79bb95a23c827c6cda873dba0599fce5b6dde"
+      },
+      {
+        "nom": "Qt5Network.dll",
+        "dossier": false,
+        "octets": 1798144,
+        "sha256": "ee27d171ae29c1f8cfeed93349f411a35b44386f513ce60b9bfd5bf68a6bdd21"
+      },
+      {
+        "nom": "Qt5Widgets.dll",
+        "dossier": false,
+        "octets": 6355456,
+        "sha256": "11a43141d54232edf97aa11aa5b9b97e9235405c774ce0e011d904eaef69deaf"
+      },
+      {
+        "nom": "Res.exe",
+        "dossier": false,
+        "octets": 25088,
+        "sha256": "49f091ade48890bfa22d2b455494be95e52392c478b67e10626222b6aee37e1e"
+      }
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "commande": [
+      "vol",
+      "--clear-cache",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/avant/windows-before-malware.elf",
+      "windows.info"
+    ],
+    "debut_utc": "2026-09-10T18:52:06.012285+00:00",
+    "fin_utc": "2026-09-10T18:52:07.174129+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/avant/windows-before-malware.elf",
+      "windows.pslist"
+    ],
+    "debut_utc": "2026-09-10T18:52:07.175381+00:00",
+    "fin_utc": "2026-09-10T18:52:07.626117+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/avant/windows-before-malware.elf",
+      "windows.netscan"
+    ],
+    "debut_utc": "2026-09-10T18:52:07.627300+00:00",
+    "fin_utc": "2026-09-10T18:52:11.727153+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.info"
+    ],
+    "debut_utc": "2026-09-10T18:52:11.728519+00:00",
+    "fin_utc": "2026-09-10T18:52:12.060769+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.pslist"
+    ],
+    "debut_utc": "2026-09-10T18:52:12.061820+00:00",
+    "fin_utc": "2026-09-10T18:52:12.506708+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.psscan"
+    ],
+    "debut_utc": "2026-09-10T18:52:12.507972+00:00",
+    "fin_utc": "2026-09-10T18:52:14.843256+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.netscan"
+    ],
+    "debut_utc": "2026-09-10T18:52:14.844598+00:00",
+    "fin_utc": "2026-09-10T18:52:18.497587+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.netstat"
+    ],
+    "debut_utc": "2026-09-10T18:52:18.498755+00:00",
+    "fin_utc": "2026-09-10T18:52:19.038912+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.cmdline",
+      "--pid",
+      "6064"
+    ],
+    "debut_utc": "2026-09-10T18:52:19.040003+00:00",
+    "fin_utc": "2026-09-10T18:52:19.449435+00:00",
+    "code_sortie": 0
+  },
+  {
+    "commande": [
+      "vol",
+      "--offline",
+      "-q",
+      "-s",
+      "/symboles",
+      "-r",
+      "json",
+      "-f",
+      "/storage/windows-after-malware.elf",
+      "windows.dlllist",
+      "--pid",
+      "6064"
+    ],
+    "debut_utc": "2026-09-10T18:52:19.450554+00:00",
+    "fin_utc": "2026-09-10T18:52:20.021232+00:00",
+    "code_sortie": 0
+  }
+]

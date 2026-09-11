@@ -1,0 +1,7 @@
+{
+  "observation_utc_hote": "2026-09-10T16:03:40.871036+00:00",
+  "source": "Lecture visuelle de la console noVNC pendant tester.cmd",
+  "titre_fenetre": "Env",
+  "message": "This application failed to start because it could not find or load the Qt platform plugin \"windows\" in \"\". Reinstalling the application may fix this problem.",
+  "action": "Fermeture par OK; pas de remplacement de fichier ni ajout de plugin; reseau de la VM inchange."
+}

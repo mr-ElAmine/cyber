@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://msdl.microsoft.com/download/symbols/ntkrnlmp.pdb/CA8E2F01B822EDE6357898BFBF8629971/ntkrnlmp.pdb",
+    "identifiant_pdb": "CA8E2F01B822EDE6357898BFBF8629971",
+    "sha256": {
+      "ntkrnlmp.pdb": "e1be7b013e71142ebfb160edead2642bf0e632a9e714540555aea2de9c23e90a",
+      "CA8E2F01B822EDE6357898BFBF8629971.json": "a9364774d42d9037a12c084beccc60dec89645ae8e16210f9baa7954fe0e3ec8"
+    }
+  },
+  {
+    "url": "https://msdl.microsoft.com/download/symbols/tcpip.pdb/E4E0EE7832FBC6E1BE2D05BD43FA6EC61/tcpip.pdb",
+    "identifiant_pdb": "E4E0EE7832FBC6E1BE2D05BD43FA6EC61",
+    "sha256": {
+      "tcpip.pdb": "e1fb615ba2e46c77d053498f222df3fc6ca293b91cf0fa5065125994a357fcf4",
+      "E4E0EE7832FBC6E1BE2D05BD43FA6EC61.json": "b17362a73cefb647779f8c34d7a70e7be478c0fdb345ffc1bb57d3d579ef7c30"
+    }
+  }
+]

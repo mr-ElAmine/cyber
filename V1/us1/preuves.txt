@@ -1,0 +1,92 @@
+US 1 - Controles effectues pour le rendu
+Date UTC : 2026-09-10T14:17:48.787Z
+
+Ces sorties sont celles des controles Docker du rendu. Les observations
+Windows et le test historique de restauration sur copie ne sont pas des
+sorties reproduites dans ce fichier.
+Le test TCP a pour resultat attendu un echec : aucune route reseau.
+
+=== configuration et etat Docker ===
+Commande :
+rtk proxy docker inspect cyber-windows-vm-1 cyber-windows-console-1 --format '{{.Name}} status={{.State.Status}} exit={{.State.ExitCode}} network={{.HostConfig.NetworkMode}} user={{.Config.User}} privileged={{.HostConfig.Privileged}} readOnly={{.HostConfig.ReadonlyRootfs}} capDrop={{json .HostConfig.CapDrop}} security={{json .HostConfig.SecurityOpt}} ports={{json .HostConfig.PortBindings}} cmd={{json .Config.Cmd}} mounts={{json .Mounts}}'
+Code de sortie : 0
+/cyber-windows-vm-1 status=exited exit=0 network=none user=1000:1000 privileged=false readOnly=true capDrop=["ALL"] security=["no-new-privileges:true"] ports={} cmd=["qemu-system-x86_64","-name","cyber-windows","-machine","pc,accel=tcg","-cpu","qemu64","-smp","2","-m","4096","-device","qemu-xhci","-device","usb-tablet","-nic","none","-drive","file=/storage/windows.qcow2,format=qcow2,if=ide,index=0","-drive","file=/media/windows.iso,format=raw,media=cdrom,readonly=on,if=ide,index=2","-boot","order=c,once=d,menu=on","-vga","std","-display","none","-vnc","unix:/run/console/vnc.sock","-monitor","unix:/tmp/qemu-monitor.sock,server=on,wait=off","-serial","none","-parallel","none"] mounts=[{"Type":"volume","Name":"cyber-windows_windows-disk","Source":"/var/lib/docker/volumes/cyber-windows_windows-disk/_data","Destination":"/storage","Driver":"local","Mode":"rw","RW":true,"Propagation":""},{"Type":"volume","Name":"cyber-windows_console-socket","Source":"/var/lib/docker/volumes/cyber-windows_console-socket/_data","Destination":"/run/console","Driver":"local","Mode":"rw","RW":true,"Propagation":""},{"Type":"bind","Source":"/Users/aisaa/Documents/ecole/cyber/infrastructure/windows/media","Destination":"/media","Mode":"","RW":false,"Propagation":"rprivate"}]
+/cyber-windows-console-1 status=running exit=0 network=cyber-windows_administration user=1000:1000 privileged=false readOnly=true capDrop=["ALL"] security=["no-new-privileges:true"] ports={"6080/tcp":[{"HostIp":"127.0.0.1","HostPort":"6085"}]} cmd=["websockify","--web=/usr/share/novnc","--unix-target=/run/console/vnc.sock","0.0.0.0:6080"] mounts=[{"Type":"volume","Name":"cyber-windows_console-socket","Source":"/var/lib/docker/volumes/cyber-windows_console-socket/_data","Destination":"/run/console","Driver":"local","Mode":"ro","RW":false,"Propagation":""}]
+
+=== disque et snapshots ===
+Commande :
+rtk proxy docker compose -f infrastructure/windows/compose.yaml run --rm --no-deps vm qemu-img info --output=json /storage/windows.qcow2
+Code de sortie : 0
+ Container cyber-windows-vm-run-924ed9092583 Creating 
+ Container cyber-windows-vm-run-924ed9092583 Created 
+{
+    "children": [
+        {
+            "name": "file",
+            "info": {
+                "children": [
+                ],
+                "virtual-size": 9762112000,
+                "filename": "/storage/windows.qcow2",
+                "format": "file",
+                "actual-size": 9762152448,
+                "format-specific": {
+                    "type": "file",
+                    "data": {
+                    }
+                },
+                "dirty-flag": false
+            }
+        }
+    ],
+    "snapshots": [
+        {
+            "icount": 0,
+            "vm-clock-nsec": 0,
+            "name": "windows-clean-us1",
+            "date-sec": 1789041619,
+            "date-nsec": 315677000,
+            "vm-clock-sec": 0,
+            "id": "1",
+            "vm-state-size": 0
+        },
+        {
+            "icount": 0,
+            "vm-clock-nsec": 0,
+            "name": "malware-first-run",
+            "date-sec": 1789044644,
+            "date-nsec": 184663000,
+            "vm-clock-sec": 0,
+            "id": "2",
+            "vm-state-size": 0
+        }
+    ],
+    "virtual-size": 68719476736,
+    "filename": "/storage/windows.qcow2",
+    "cluster-size": 65536,
+    "format": "qcow2",
+    "actual-size": 9762152448,
+    "format-specific": {
+        "type": "qcow2",
+        "data": {
+            "compat": "1.1",
+            "compression-type": "zlib",
+            "lazy-refcounts": false,
+            "refcount-bits": 16,
+            "corrupt": false,
+            "extended-l2": false
+        }
+    },
+    "dirty-flag": false
+}
+
+=== connexion sortante du service VM sans demarrer Windows ===
+Commande :
+rtk proxy docker compose -f infrastructure/windows/compose.yaml run --rm --no-deps vm socat -T 3 - TCP:1.1.1.1:443,connect-timeout=3
+Code de sortie : 1
+ Container cyber-windows-vm-run-41cb6e6b6215 Creating 
+ Container cyber-windows-vm-run-41cb6e6b6215 Created 
+2026/09/10 14:16:02 socat[1] W connect(5, AF=2 1.1.1.1:443, 16): Network is unreachable
+2026/09/10 14:16:02 socat[1] E TCP:1.1.1.1:443: Network is unreachable
+
+

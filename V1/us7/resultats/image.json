@@ -1,0 +1,26 @@
+{
+    "children": [
+        {
+            "name": "file",
+            "info": {
+                "children": [
+                ],
+                "virtual-size": 68719476736,
+                "filename": "/images/windows-first-run.raw",
+                "format": "file",
+                "actual-size": 9260417024,
+                "format-specific": {
+                    "type": "file",
+                    "data": {
+                    }
+                },
+                "dirty-flag": false
+            }
+        }
+    ],
+    "virtual-size": 68719476736,
+    "filename": "/images/windows-first-run.raw",
+    "format": "raw",
+    "actual-size": 9260417024,
+    "dirty-flag": false
+}
