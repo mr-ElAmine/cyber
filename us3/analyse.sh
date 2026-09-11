@@ -1,17 +1,16 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -e
+
+# Se placer dans le dossier de cette story.
 cd "$(dirname "$0")"
 
-echo "Construction des outils d'analyse..."
-docker build -t cyber-static-analysis:local .
+# Préparer les outils d'analyse.
+echo "Préparation de pefile et objdump..."
+docker compose build
 
+# Préparer le dossier de sortie.
 mkdir -p resultats
-echo "Analyse des deux EXE, sans reseau et sans les executer..."
-docker run --rm --network none --read-only \
-  --cap-drop ALL --security-opt no-new-privileges \
-  --memory 512m --pids-limit 32 \
-  --tmpfs /tmp:rw,noexec,nosuid,nodev,size=64m \
-  --volume cyber-malware-samples:/samples:ro \
-  --volume "$PWD/analyse.py:/analyse.py:ro" \
-  --volume "$PWD/resultats:/resultats" \
-  cyber-static-analysis:local
+
+# Lire les exécutables dans le conteneur isolé.
+echo "Analyse des fichiers, sans les exécuter..."
+docker compose run --rm -T analyse

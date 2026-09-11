@@ -1,5 +1,6 @@
 FROM python:3.13-slim
 
+# Dissect lit les disques, les partitions, les fichiers NTFS et les ruches du registre.
 RUN pip install --no-cache-dir \
     dissect.hypervisor==3.21 dissect.volume==3.18 \
     dissect.ntfs==3.16 dissect.regf==3.14

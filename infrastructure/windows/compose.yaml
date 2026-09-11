@@ -4,7 +4,8 @@ services:
   vm:
     build: {context: ., target: vm}
     image: cyber-windows-vm:local
-    # PC x64 : 4 Gio de RAM, aucun réseau, disque et DVD d'installation.
+    # QEMU émule le PC x64 : 2 processeurs, 4 Gio de RAM et le disque Windows.
+    # -nic none retire la carte réseau ; -vnc transmet l'affichage à la console.
     command: >-
       qemu-system-x86_64 -name cyber-windows
       -machine pc,accel=tcg -cpu qemu64 -smp 2 -m 4096
@@ -15,15 +16,18 @@ services:
       -boot order=c,once=d,menu=on
       -vga std -display none -vnc unix:/run/console/vnc.sock
       -monitor unix:/tmp/qemu-monitor.sock,server=on,wait=off -serial none -parallel none
+    # Le conteneur de QEMU est lui aussi privé de réseau externe.
     network_mode: none
+    # Compte non root et système du conteneur en lecture seule.
     user: "1000:1000"
     read_only: true
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
     volumes:
+      # Windows peut écrire sur son disque ; arrêter le conteneur ne l'efface pas.
       - windows-disk:/storage
       - console-socket:/run/console
-      # L'ISO reste en lecture seule ; un dossier absent provoque une erreur.
+      # QEMU lit les ISO de ce dossier et les présente comme des DVD à Windows.
       - type: bind
         source: ./media
         target: /media
@@ -42,6 +46,7 @@ services:
     build: {context: ., target: console}
     image: cyber-windows-console:local
     depends_on: [vm]
+    # La console est accessible sur le Mac, à localhost:6085.
     ports:
       - "127.0.0.1:6085:6080"
     networks: [administration]
@@ -50,6 +55,7 @@ services:
     cap_drop: [ALL]
     security_opt: [no-new-privileges:true]
     volumes:
+      # Ce canal sert à l'affichage et aux entrées clavier/souris.
       - console-socket:/run/console:ro
     tmpfs:
       - /tmp:rw,nosuid,nodev,noexec,size=16m,mode=1777

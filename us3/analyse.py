@@ -24,6 +24,7 @@ INDICES = re.compile(
 
 
 def lire_imports(pe):
+    # Fonctions et données demandées aux DLL, avec leurs adresses dans la table des imports.
     imports = []
     for dll in pe.DIRECTORY_ENTRY_IMPORT:
         fonctions = []
@@ -35,6 +36,7 @@ def lire_imports(pe):
 
 
 def lire_sections(pe):
+    # Chaque section a des droits : R = lecture, W = écriture, X = exécution.
     sections = []
     for section in pe.sections:
         permissions = ''
@@ -73,7 +75,7 @@ def relever_chaines(pe, donnees):
 
 def desassembler(nom, donnees):
     # objdump lit un fichier. Cette copie ne vit que dans le /tmp du conteneur,
-    # monté en mémoire avec noexec par analyse.sh.
+    # monté en mémoire avec noexec dans compose.yaml.
     copie = Path('/tmp') / nom
     copie.write_bytes(donnees)
     try:

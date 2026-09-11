@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -e
 cd "$(dirname "$0")"
-docker build -t cyber-memory-analysis:local .
+
+# Installer Volatility dans l’image Docker.
+docker compose build symboles
 mkdir -p cache symboles resultats
-# Ce conteneur telecharge les symboles publics ; aucun dump ne lui est fourni.
-docker run --rm --read-only --cap-drop ALL --security-opt no-new-privileges \
-  --memory 2g --tmpfs /tmp:uid=1000,gid=1000 \
-  --volume "$PWD/cache:/cache" \
-  --volume "$PWD/symboles:/symboles" \
-  --volume "$PWD/resultats:/resultats" \
-  --volume "$PWD/symboles.py:/symboles.py:ro" \
-  cyber-memory-analysis:local python /symboles.py
+
+# Télécharger les symboles Microsoft.
+docker compose run --rm -T symboles /script/telecharger_symboles.py
+
+# Les convertir au format attendu par Volatility.
+docker compose run --rm -T symboles /script/convertir_symboles.py

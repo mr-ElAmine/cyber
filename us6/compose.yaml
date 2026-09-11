@@ -1,0 +1,95 @@
+name: cyber-us6
+
+services:
+  symboles:
+    # Télécharger les symboles publics Microsoft, sans fournir les captures RAM.
+    build: .
+    image: cyber-memory-analysis:local
+    entrypoint: [python]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 2g
+    tmpfs:
+      - /tmp:uid=1000,gid=1000
+
+    volumes:
+      - type: bind
+        source: ./script
+        target: /script
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./symboles
+        target: /symboles
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./cache
+        target: /cache
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+  analyse:
+    # Lire les captures existantes avec Volatility, sans accès réseau.
+    image: cyber-memory-analysis:local
+    entrypoint: [python]
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 3g
+    cpus: 2
+    pids_limit: 64
+
+    volumes:
+      # Capture après lancement, conservée dans le volume Windows.
+      - type: volume
+        source: disque_windows
+        target: /storage
+        read_only: true
+
+      # Capture avant lancement, conservée sur le Mac.
+      - type: bind
+        source: ../infrastructure/windows/results
+        target: /avant
+        read_only: true
+        bind:
+          create_host_path: false
+
+      # Scripts et symboles : lecture seule.
+      - type: bind
+        source: ./script
+        target: /script
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./symboles
+        target: /symboles
+        read_only: true
+        bind:
+          create_host_path: false
+
+      # Cache de Volatility et résultats : écriture autorisée.
+      - type: bind
+        source: ./cache
+        target: /cache
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+volumes:
+  disque_windows:
+    external: true
+    name: cyber-windows_windows-disk

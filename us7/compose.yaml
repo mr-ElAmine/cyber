@@ -1,0 +1,100 @@
+name: cyber-us7
+
+services:
+  acquisition:
+    # QEMU copie le snapshot ; seul le dossier de destination est modifiable.
+    image: cyber-windows-vm:local
+    entrypoint: [sh, /script/acquerir_disque.sh]
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    volumes:
+      - type: volume
+        source: disque_windows
+        target: /storage
+        read_only: true
+      - type: bind
+        source: ./script
+        target: /script
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./images
+        target: /images
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+  verification:
+    # Dissect compare le snapshot à la copie RAW, tous deux en lecture seule.
+    image: cyber-disk-analysis:local
+    command: [python, /script/verifier_image.py]
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    cpus: 2
+    volumes:
+      - type: volume
+        source: disque_windows
+        target: /storage
+        read_only: true
+      - type: bind
+        source: ./script
+        target: /script
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./images
+        target: /images
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+  analyse:
+    # L’inventaire lit uniquement la copie RAW et écrit les relevés.
+    build: .
+    image: cyber-disk-analysis:local
+    command: [python, /script/analyser_disque.py]
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    volumes:
+      - type: bind
+        source: ./script
+        target: /script
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./images
+        target: /images
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+volumes:
+  disque_windows:
+    external: true
+    name: cyber-windows_windows-disk

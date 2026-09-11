@@ -1,0 +1,95 @@
+name: cyber-us4
+
+services:
+  analyse:
+    # Outils de lecture du disque, du registre et des traces Process Monitor.
+    build: .
+    image: cyber-dynamic-analysis:local
+    command: [python, /analyse.py]
+
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    pids_limit: 32
+
+    volumes:
+      # Lire les snapshots du disque Windows sans les modifier.
+      - type: volume
+        source: disque_windows
+        target: /storage
+        read_only: true
+
+      - type: bind
+        source: ./analyse.py
+        target: /analyse.py
+        read_only: true
+        bind:
+          create_host_path: false
+
+      # Enregistrer les relevés dans le projet.
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+  dvd:
+    # Préparer le DVD utilisé pour les essais dans la VM.
+    image: cyber-windows-vm:local
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+
+    command:
+      - genisoimage
+      - -quiet
+      # Formats de noms de fichiers compatibles Windows et Linux.
+      - -J
+      - -R
+      # Nom du DVD.
+      - -V
+      - CYBER_US4
+      # Fichier ISO à produire.
+      - -o
+      - /media/us4.iso
+      # Contenu du DVD : chemin sur le DVD = fichier source.
+      - -graft-points
+      - Malware.zip=/samples/Waelmeg-056490ff.zip
+      - Tools=/tools
+      - preparer.cmd=/scripts/preparer.cmd
+      - tester.cmd=/scripts/tester.cmd
+
+    volumes:
+      - type: volume
+        source: echantillons
+        target: /samples
+        read_only: true
+      - type: volume
+        source: outils
+        target: /tools
+        read_only: true
+      - type: bind
+        source: .
+        target: /scripts
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../infrastructure/windows/media
+        target: /media
+        bind:
+          create_host_path: false
+
+volumes:
+  disque_windows:
+    external: true
+    name: cyber-windows_windows-disk
+  echantillons:
+    external: true
+    name: cyber-malware-samples
+  outils:
+    external: true
+    name: cyber-analysis-tools

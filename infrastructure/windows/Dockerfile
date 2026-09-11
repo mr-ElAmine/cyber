@@ -1,7 +1,9 @@
-# Docker construit nativement pour le processeur du Mac.
-# QEMU se charge ensuite d'émuler le PC x64 de Windows.
+# Image de la VM : les outils tournent sur le processeur du Mac.
+# QEMU émule ensuite le PC x64 nécessaire à Windows.
 FROM debian:13-slim AS vm
 
+# qemu-utils gère le disque ; socat accède au moniteur QEMU.
+# genisoimage prépare les DVD virtuels utilisés pour apporter des fichiers.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends qemu-system-x86 qemu-utils socat genisoimage \
     && rm -rf /var/lib/apt/lists/* \
@@ -10,7 +12,8 @@ RUN apt-get update \
 USER 1000:1000
 # La commande QEMU est définie directement dans compose.yaml.
 
-# Deuxième image : uniquement l'interface web d'administration.
+# Image de la console : noVNC affiche le bureau dans le navigateur.
+# websockify relie cette page au socket VNC de QEMU.
 FROM debian:13-slim AS console
 
 RUN apt-get update \

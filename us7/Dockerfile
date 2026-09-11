@@ -1,5 +1,6 @@
 FROM python:3.13-slim
 
+# Dissect lit les disques QCOW2, les partitions et les fichiers NTFS.
 RUN pip install --no-cache-dir \
     dissect.hypervisor==3.21 dissect.volume==3.18 dissect.ntfs==3.16
 

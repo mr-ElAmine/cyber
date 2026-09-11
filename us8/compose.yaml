@@ -1,0 +1,64 @@
+name: cyber-us8
+
+services:
+  analyse:
+    build: .
+    image: cyber-correlation:local
+    command: [python, /script/analyser.py]
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    cpus: 2
+
+    volumes:
+      # Disque source pour lire le snapshot propre, sans le modifier.
+      - type: volume
+        source: disque_windows
+        target: /source
+        read_only: true
+
+      # Image disque et relevés des stories précédentes : lecture seule.
+      - type: bind
+        source: ../us7/images
+        target: /images
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../us7/resultats
+        target: /disque
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../us6/resultats
+        target: /ram
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ../us4/resultats
+        target: /dynamique
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./script
+        target: /script
+        read_only: true
+        bind:
+          create_host_path: false
+
+      # Seuls les résultats de cette story peuvent être écrits.
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+volumes:
+  disque_windows:
+    external: true
+    name: cyber-windows_windows-disk

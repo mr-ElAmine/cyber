@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -e
+
+# Se placer dans le dossier qui contient compose.yaml et hashes.py.
 cd "$(dirname "$0")"
 
-# L'image de la console contient déjà Python.
-docker run --rm --network none --read-only \
-  --cap-drop ALL --security-opt no-new-privileges \
-  --memory 128m --pids-limit 32 \
-  --volume cyber-malware-samples:/samples:ro \
-  --volume "$PWD/hashes.py:/hashes.py:ro" \
-  cyber-windows-console:local python3 /hashes.py | tee hashes.json
+# Calculer les empreintes et enregistrer le résultat.
+docker compose run --rm -T empreintes > hashes.json
+
+# Afficher le fichier obtenu dans le terminal.
+cat hashes.json

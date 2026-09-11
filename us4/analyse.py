@@ -22,11 +22,13 @@ def date_windows(filetime):
 
 
 def ouvrir_windows(snapshot):
+    # La plus grande partition de ce disque contient Windows.
     partitions = Disk(snapshot.open()).partitions
     return NTFS(max(partitions, key=lambda p: p.size).open())
 
 
 def relever_installation(ntfs):
+    # Relever les valeurs de démarrage et les fichiers présents dans WindSyst.
     hive = RegistryHive(ntfs.mft.get('Users/Analyste/NTUSER.DAT').open())
     valeurs = hive.open(r'Software\Microsoft\Windows\CurrentVersion\Run').values()
     fichiers = []
@@ -63,6 +65,7 @@ def analyser_essai(snapshots, avant, snapshot, chemin_trace, prefixe, empreinte_
     apres = ouvrir_windows(snapshots[snapshot])
     trace = apres.mft.get(chemin_trace)
     empreinte = hashlib.file_digest(trace.open(), 'sha256').hexdigest()
+    # Vérifier que la trace correspond bien à celle conservée pour cet essai.
     if empreinte != empreinte_attendue:
         raise ValueError(f'{snapshot} : le SHA-256 de la trace diffère du relevé initial.')
     lecteur = ProcmonLogsReader(trace.open())
@@ -107,6 +110,7 @@ def analyser_essai(snapshots, avant, snapshot, chemin_trace, prefixe, empreinte_
         raise ValueError('Un PID a été réutilisé : il faut distinguer ses heures de création.')
     racines = {pid for pid, p in processus.items() if p['nom'].lower() in ('res.exe', 'env.exe')}
     famille = retrouver_descendants(processus, racines)
+    # Ne conserver que Res, Env et leurs descendants dans le CSV.
     evenements = [e for e in candidats if e['pid'] in famille]
     with (RESULTATS / f'{prefixe}evenements.csv').open('w', newline='') as fichier:
         writer = csv.DictWriter(fichier, fieldnames=['evenement', 'heure_windows_utc', 'filetime', 'pid', 'processus',

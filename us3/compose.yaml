@@ -1,0 +1,46 @@
+name: cyber-us3
+
+services:
+  analyse:
+    # Construire l'image qui contient pefile et objdump.
+    build: .
+    image: cyber-static-analysis:local
+
+    # L'analyse lit les fichiers sans accès réseau.
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 512m
+    pids_limit: 32
+
+    # Copies temporaires en mémoire, avec l'exécution de fichiers interdite.
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,nodev,size=64m
+
+    volumes:
+      # Archive d'origine : lecture seule.
+      - type: volume
+        source: echantillons
+        target: /samples
+        read_only: true
+
+      # Script Python à lancer : lecture seule.
+      - type: bind
+        source: ./analyse.py
+        target: /analyse.py
+        read_only: true
+        bind:
+          create_host_path: false
+
+      # Seuls les résultats sont enregistrés dans le projet.
+      - type: bind
+        source: ./resultats
+        target: /resultats
+        bind:
+          create_host_path: false
+
+volumes:
+  echantillons:
+    external: true
+    name: cyber-malware-samples

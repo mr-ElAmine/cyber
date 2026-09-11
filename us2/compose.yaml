@@ -1,0 +1,39 @@
+name: cyber-us2
+
+services:
+  empreintes:
+    # Cette image contient déjà Python, installé pendant l'US1.
+    image: cyber-windows-console:local
+    command: [python3, /hashes.py]
+
+    # Aucun accès réseau pendant la lecture des fichiers.
+    network_mode: none
+
+    # Le conteneur ne peut pas modifier son système ni obtenir de nouveaux privilèges.
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+
+    # Ressources disponibles pour ce petit calcul.
+    mem_limit: 128m
+    pids_limit: 32
+
+    volumes:
+      # L'archive à lire se trouve dans ce volume Docker existant.
+      - type: volume
+        source: echantillons
+        target: /samples
+        read_only: true
+
+      # Le script du projet devient /hashes.py dans le conteneur.
+      - type: bind
+        source: ./hashes.py
+        target: /hashes.py
+        read_only: true
+        bind:
+          create_host_path: false
+
+volumes:
+  echantillons:
+    external: true
+    name: cyber-malware-samples
