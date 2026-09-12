@@ -1,0 +1,29 @@
+name: cyber-us9
+
+services:
+  telechargement:
+    # Réutiliser Python du laboratoire pour récupérer l’archive publique.
+    image: cyber-correlation:local
+    command: [python, /script/telecharger.py]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 256m
+    volumes:
+      - ./script:/script:ro
+      - ./preuves:/preuves
+
+  analyse:
+    build: .
+    image: cyber-usb-analysis:local
+    command: [python, /script/analyser.py]
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    cpus: 2
+    volumes:
+      - ./script:/script:ro
+      - ./preuves:/preuves:ro
+      - ./resultats:/resultats

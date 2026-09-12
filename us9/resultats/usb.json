@@ -1,0 +1,42 @@
+{
+  "control_set": "ControlSet001",
+  "fuseau_windows": "Israel Standard Time",
+  "appareils": [
+    {
+      "modele": "SanDisk Cruzer Blade USB Device",
+      "numero_serie": "4C530000281008116284",
+      "instance_usbstor": "4C530000281008116284&0",
+      "identifiant_usb": "VID_0781&PID_5567",
+      "container_id": "{3899d6a0-755e-5c4f-9aec-4655aee0f935}",
+      "cle_usbstor": "ControlSet001\\Enum\\USBSTOR\\Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00\\4C530000281008116284&0",
+      "cle_usb": "ControlSet001\\Enum\\USB\\VID_0781&PID_5567\\4C530000281008116284",
+      "parent_confirme": true,
+      "montages": [
+        {
+          "nom": "\\??\\Volume{635b1205-467e-11ea-ba75-000c295e7ac0}",
+          "donnee": "_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#4C530000281008116284&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}"
+        },
+        {
+          "nom": "\\DosDevices\\E:",
+          "donnee": "_??_USBSTOR#Disk&Ven_SanDisk&Prod_Cruzer_Blade&Rev_1.00#4C530000281008116284&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}"
+        }
+      ],
+      "noms_volume": [
+        {
+          "cle": "Microsoft\\Windows Portable Devices\\Devices\\SWD#WPDBUSENUM#_??_USBSTOR#DISK&VEN_SANDISK&PROD_CRUZER_BLADE&REV_1.00#4C530000281008116284&0#{53F56307-B6BF-11D0-94F2-00A0C91EFB8B}",
+          "nom": "New Volume"
+        }
+      ],
+      "traces_profil": [
+        {
+          "registre": "NTUSER.DAT",
+          "cle": "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\MountPoints2\\{635b1205-467e-11ea-ba75-000c295e7ac0}",
+          "derniere_modification_utc": "2020-02-03T12:44:21.983459+00:00",
+          "sens": "Trace de montage dans ce profil ; ne prouve pas une copie de fichiers."
+        }
+      ]
+    }
+  ],
+  "critere_uid_extrait": true,
+  "limite": "Identifiants lus dans le registre ; propriétaire et fuite non établis."
+}

@@ -1,0 +1,43 @@
+{
+  "depot": "https://github.com/Waelmeg/Dump_memoire",
+  "commit": "c2741e9bfed329c780a07f230b4ce548ee3806a7",
+  "url": "https://raw.githubusercontent.com/Waelmeg/Dump_memoire/c2741e9bfed329c780a07f230b4ce548ee3806a7/dump.zip",
+  "archive_sha256": "591dd24d95ef5021d56f5cc2f58aa0ce5429aea48b7b2dc375ad1356829dd81a",
+  "archive_octets": 18123353,
+  "registres": {
+    "SYSTEM": {
+      "sha256": "1183b1cfe11b08cb5b5a2b9a79990ea958e6e937606bc786eefc04983a685d54",
+      "octets": 16515072,
+      "sequence1": 839,
+      "sequence2": 838,
+      "ecriture_inachevee": true
+    },
+    "SOFTWARE": {
+      "sha256": "3bad92966514d11ee5f61c29019097812a55a0d638293d04bea0cb335bed8279",
+      "octets": 70778880,
+      "sequence1": 1835,
+      "sequence2": 1834,
+      "ecriture_inachevee": true
+    },
+    "NTUSER.DAT": {
+      "sha256": "ff0c4d9b80cf53961eb9d5c571132d585de9c6d6d598a610c6ece2593593178e",
+      "octets": 1310720,
+      "sequence1": 806,
+      "sequence2": 805,
+      "ecriture_inachevee": true
+    }
+  },
+  "dissect.regf": "3.14",
+  "limite": "Fichiers lus tels que fournis ; aucun journal de récupération disponible.",
+  "contenu_archive": [
+    "dump/",
+    "dump/Amcache.hve",
+    "dump/DEFAULT",
+    "dump/NTUSER.DAT",
+    "dump/SECURITY",
+    "dump/SOFTWARE",
+    "dump/SYSTEM"
+  ],
+  "analyse_utc": "2026-09-11T11:55:38.958984+00:00",
+  "us9_usb_json_sha256": "9631676df28f122976bae7b0ba9c1e826b9f7157021d17397ec3509b6be4d117"
+}

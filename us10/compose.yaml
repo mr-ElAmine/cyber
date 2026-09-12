@@ -1,0 +1,21 @@
+name: cyber-us10
+
+services:
+  analyse:
+    image: cyber-usb-analysis:local
+    command: [python, /script/analyser.py]
+    # Réutiliser les fonctions de lecture de l’US9.
+    environment:
+      PYTHONPATH: /commun
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 768m
+    cpus: 2
+    volumes:
+      - ./script:/script:ro
+      - ../us9/script:/commun:ro
+      - ../us9/preuves:/preuves:ro
+      - ../us9/resultats:/identification:ro
+      - ./resultats:/resultats

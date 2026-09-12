@@ -1,0 +1,11 @@
+{
+  "nombre_traces": 9,
+  "horloge": "Dates du poste étudié, en UTC ; indépendantes du laboratoire des US1 à US8.",
+  "fuseau_windows": "Israel Standard Time",
+  "premiere_installation_extraite": true,
+  "derniere_connexion_extraite": true,
+  "dernier_retrait_extrait": true,
+  "fuite_demontree": false,
+  "concordance_avec_fuite": "Non vérifiable : aucune date supposée de fuite fournie.",
+  "limite": "Registres avec écriture inachevée, sans journaux de récupération. Historique non exhaustif."
+}
